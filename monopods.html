@@ -28,7 +28,7 @@
           <li class="catalog__item"><a href="#" class="catalog__link">Виртуальная реальность</a></li>
           <li class="catalog__item"><a href="#" class="catalog__link">Фитнес-браслеты</a></li>
           <li class="catalog__item"><a href="#" class="catalog__link">Квадрокоптеры</a></li>
-          <li class="catalog__item"><a href="monopods.html" class="catalog__link">Моноподы для селфи</a></li>
+          <li class="catalog__item"><a href="#" class="catalog__link">Моноподы для селфи</a></li>
           <li class="catalog__item"><a href="#" class="catalog__link">Умные часы</a></li>
           <li class="catalog__item"><a href="#" class="catalog__link">Экшн-камеры</a></li>
         </ul>
@@ -36,38 +36,38 @@
     </header>
 
     <main>
-      <nav>
-        <ul class="categories__list">
-          <li class="categories__item"><a href="#" class="categories__link">Виртуальная реальность</a></li>
-          <li class="categories__item"><a href="monopods.html" class="categories__link">Моноподы для селфи</a></li>
-          <li class="categories__item"><a href="#" class="categories__link">Экшн-камеры</a></li>
-          <li class="categories__item"><a href="#" class="categories__link">Фитнес-браслет</a></li>
-          <li class="categories__item"><a href="#" class="categories__link">Умные часы</a></li>
-          <li class="categories__item"><a href="#" class="categories__link">Квадрокомпеты</a></li>
-        </ul>
+      <nav class="categories-navigation">
+        <h2 class="category__item--current">Монопод для селфи</h2>
+        <div class="breadcrumbs">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item"><a href="#">Главная</a></li>
+            <li class="breadcrumbs__item"><a href="#">Каталог товаров</a></li>
+            <li class="breadcrumbs__item"><a href="#">Моноподы для селфи</a></li>
+          </ul>
+        </div>
       </nav>
 
-      <div class="features"></div>
-
-      <div class="manufacture-carousel"></div>
-
-      <div class="about-us">
-        <p class="about-us__title">О нас</p>
-        <p class="about-us__desc">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.<br>
-        Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
-        <ul class="delivery__list">
-          <li class="delivery__item"><a href="#" class="delivery__link">Деловые Линии</a></li>
-          <li class="delivery__item"><a href="#" class="delivery__link">Автотрейдинг</a></li>
-          <li class="delivery__item"><a href="#" class="delivery__link">ЖелДорЭкспедиция</a></li>
-        </ul>
-        <p class="about-us__more"><a href="#" class="about-us__link">Подробнее о нас</a></p>
-      </div>
-
-      <div class="contacts">
-        <p class="contacts__title">Контакты</p>
-        <p class="contacts__desc">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-        <div class="map"></div>
-        <p class="feedback"><a href="" class="feedback__link">Напишите нам</a></p>
+      <div class="filters">
+        <div class="filter__item--color"></div>
+        <p class="filter__title">Стоимость</p>
+        <div class="filter__item--checkbox">
+          <p class="filter__title">Цвет</p>
+          <ul>
+            <li><input type="checkbox" checked>Чёрный</li>
+            <li><input type="checkbox">Белый</li>
+            <li><input type="checkbox" checked>Синий</li>
+            <li><input type="checkbox" checked>Красный</li>
+            <li><input type="checkbox">Розовый</li>
+          </ul>
+        </div>
+        <div class="filter__item--bool">
+          <p class="filter__title">Bluetooth</p>
+          <ul>
+            <li><input type="radio">Да</li>
+            <li><input type="radio">Нет</li>
+          </ul>
+        </div>
+        <a href="" class="filter--submit"><input type="submit" value="Показать"></a>
       </div>
     </main>
 
@@ -107,6 +107,5 @@
         <div class="htmlacademylogo"></div>
       </div>
     </footer>
-
   </body>
 </html>
