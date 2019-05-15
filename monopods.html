@@ -5,9 +5,8 @@
     <title>HTML Academy: Девайс</title>
   </head>
   <body>
-
-    <header>
-      <div class="header__top-logo">
+    <header class="header">
+      <div class="header__top-logo logo">
         <a href="#" class="header__logo"><img src="https://via.placeholder.com/200x35" title="DEVICE" alt="DEVICE"></a>
       </div>
       <div class="user-links">
@@ -17,25 +16,25 @@
           <li class="user-links__item"><a href="#" class="user-links__link">Корзина</a></li>
         </ul>
       </div>
-      <nav>
-        <ul class="nav__list">
-          <li class="nav__item"><a href="#" class="nav__link"></a>Каталог товаров</li>
-          <li class="nav__item"><a href="#" class="nav__link"></a>Доставка</li>
-          <li class="nav__item"><a href="#" class="nav__link"></a>Гарантия</li>
-          <li class="nav__item"><a href="#" class="nav__link"></a>Контакты</li>
-        </ul>
-
-        <ul class="catalog__list">
-          <li class="catalog__item"><a href="#" class="catalog__link">Виртуальная реальность</a></li>
-          <li class="catalog__item"><a href="#" class="catalog__link">Фитнес-браслеты</a></li>
-          <li class="catalog__item"><a href="#" class="catalog__link">Квадрокоптеры</a></li>
-          <li class="catalog__item"><a href="#" class="catalog__link">Моноподы для селфи</a></li>
-          <li class="catalog__item"><a href="#" class="catalog__link">Умные часы</a></li>
-          <li class="catalog__item"><a href="#" class="catalog__link">Экшн-камеры</a></li>
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">Каталог товаров</a>
+            <ul class="catalog__list">
+              <li class="catalog__item"><a href="#" class="catalog__link">Виртуальная реальность</a></li>
+              <li class="catalog__item"><a href="#" class="catalog__link">Фитнес-браслеты</a></li>
+              <li class="catalog__item"><a href="#" class="catalog__link">Квадрокоптеры</a></li>
+              <li class="catalog__item"><a href="monopods.html" class="catalog__link">Моноподы для селфи</a></li>
+              <li class="catalog__item"><a href="#" class="catalog__link">Умные часы</a></li>
+              <li class="catalog__item"><a href="#" class="catalog__link">Экшн-камеры</a></li>
+            </ul>
+          </li>
+          <li class="main-nav__item"><a href="#" class="main-nav__link">Доставка</a></li>
+          <li class="main-nav__item"><a href="#" class="main-nav__link">Гарантия</a></li>
+          <li class="main-nav__item"><a href="#" class="main-nav__link">Контакты</a></li>
         </ul>
       </nav>
     </header>
-
     <main class="main-catalog">
       <h1 class="main-catalog__title">Монопод для селфи</h1>
       <div class="breadcrumbs">
@@ -45,7 +44,6 @@
           <li class="breadcrumbs__item breadcrumbs__item--active"><a href="#">Моноподы для селфи</a></li>
         </ul>
       </div>
-      
       <section class="filters">
         <div class="filter__item">
           <p class="filter__title">Цвет</p>
@@ -62,7 +60,6 @@
         </div>
         <a href="" class="filter--submit"><input type="submit" value="Показать"></a>
       </section>
-
       <div class="goods">
         <article class="goods__item good-card">
           <div class="good-card__pic"><img src="https://via.placeholder.com/360x380" alt="Фото любительской селфи-палки" class="good__pic"></div>
@@ -89,50 +86,36 @@
           <span class="good-card__label--new"></span>
         </article>
       </div>
-      <div class="catalog_nav">
-        <ul class="catalog__controls controls">
-          <li class="control__item"><a href="#" class="control__link--back">назад</a></li>
-          <li class="control__item"><a href="#" class="control__link--page">1</a></li>
-          <li class="control__item"><a href="#" class="control__link--page">2</a></li>
-          <li class="control__item"><a href="#" class="control__link--page">3</a></li>
-          <li class="control__item"><a href="#" class="control__link--next">вперед</a></li>
-        </ul>
-      </div>
     </main>
-
-    <footer>
-      <div class="footer__line-wrap">
-        <div class="logo"></div>
-        <div class="footer__actions">
-          <ul class="actions__list">
-            <li class="actions__item"><a href="#" class="actions__link">Валентин Петухов</a></li>
-            <li class="actions__item"><a href="#" class="actions__link">Выйти</a></li>
-            <li class="actions__item"><a href="#" class="actions__link">Сравнить</a></li>
-            <li class="actions__item"><a href="#" class="actions__link">Корзина</a></li>
+    <footer class="footer">
+      <div class="footer__column">
+        <div class="footer__logo logo">
+          <a href="#"><img src="https://via.placeholder.com/200x35" title="DEVICE" alt="DEVICE"></a>
+        </div>
+        <div class="user-links">
+          <ul class="user-links__list">
+            <li class="user-links__item"><a href="#" class="user-links__link">Войти</a></li>
+            <li class="user-links__item"><a href="#" class="user-links__link">Сравнить</a></li>
+            <li class="user-links__item"><a href="#" class="user-links__link">Корзина</a></li>
           </ul>
         </div>
       </div>
-
-      <div class="footer__line-wrap">
-        <p class="address">г. Москва, ул. Строителей, 15</p>
-        <nav>
-          <ul class="nav__list">
-            <li class="nav__item"><a href="#" class="nav__link">Доставка</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">Гарантия</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
-          </ul>
-        </nav>
-        <p class="tel">Тел.: +7 (495) 495-95-95</p>
+      <div class="footer__column">
+        <p class="footer__address">г. Москва, ул. Строителей, 15</p>
+        <ul class="footer__list">
+          <li class="footer__item"><a href="#" class="footer__link">Доставка</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">Гарантия</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">Контакты</a></li>
+        </ul>
+        <p class="footer__phone">Тел.: +7 (495) 495-95-95</p>
       </div>
-
-      <div class="footer__line-wrap">
-        <div class="logo"></div>
-        <div class="social">
-          <ul class="social__list">
-            <li class="social__item"><a href="facebook.com"></a></li>
-            <li class="social__item"><a href="instagram.com"></a></li>
-            <li class="social__item"><a href="twitter.com"></a></li>
-            <li class="social__item"><a href="htmlacademy.ru" class="htmlacademylogo"></a></li>
+      <div class="footer__column">
+        <div class="socials">
+          <ul class="socials__list">
+            <li class="socials__item social"><a href="facebook.com" target="_blank"></a></li>
+            <li class="socials__item social"><a href="instagram.com" target="_blank"></a></li>
+            <li class="socials__item social"><a href="twitter.com" target="_blank"></a></li>
+            <li class="socials__item social"><a href="htmlacademy.ru" class="htmlacademylogo" target="_blank"></a></li>
           </ul>
         </div>
       </div>
