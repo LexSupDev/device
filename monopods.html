@@ -7,14 +7,14 @@
   <body>
 
     <header>
-      <div class="logo"></div>
-      <div class="header__actions">
-        <ul class="actions__list">
-          <li class="actions__item"><a href="#" class="actions__link"></a></li>
-          <li class="actions__item"><a href="#" class="actions__link">Валентин Петухов</a></li>
-          <li class="actions__item"><a href="#" class="actions__link">Выйти</a></li>
-          <li class="actions__item"><a href="#" class="actions__link">Сравнить</a></li>
-          <li class="actions__item"><a href="#" class="actions__link">Корзина</a></li>
+      <div class="header__top-logo">
+        <a href="#" class="header__logo"><img src="https://via.placeholder.com/200x35" title="DEVICE" alt="DEVICE"></a>
+      </div>
+      <div class="user-links">
+        <ul class="user-links__list">
+          <li class="user-links__item"><a href="#" class="user-links__link">Войти</a></li>
+          <li class="user-links__item"><a href="#" class="user-links__link">Сравнить</a></li>
+          <li class="user-links__item"><a href="#" class="user-links__link">Корзина</a></li>
         </ul>
       </div>
       <nav>
@@ -36,82 +36,58 @@
       </nav>
     </header>
 
-    <main>
-      <nav class="categories-navigation">
-        <h2 class="category__item--current">Монопод для селфи</h2>
-        <div class="breadcrumbs">
-          <ul class="breadcrumbs__list">
-            <li class="breadcrumbs__item"><a href="#">Главная</a></li>
-            <li class="breadcrumbs__item"><a href="#">Каталог товаров</a></li>
-            <li class="breadcrumbs__item"><a href="#">Моноподы для селфи</a></li>
-          </ul>
-        </div>
-      </nav>
-
-      <div class="filters">
-        <p class="filters__name">Фильтр:</p>
-        <div class="filter__item--color"></div>
-        <p class="filter__title">Стоимость</p>
-        <div class="filter__item--checkbox">
-          <p class="filter__title">Цвет</p>
-          <ul>
-            <li><input type="checkbox" checked>Чёрный</li>
-            <li><input type="checkbox">Белый</li>
-            <li><input type="checkbox" checked>Синий</li>
-            <li><input type="checkbox" checked>Красный</li>
-            <li><input type="checkbox">Розовый</li>
-          </ul>
-        </div>
-        <div class="filter__item--bool">
-          <p class="filter__title">Bluetooth</p>
-          <ul>
-            <li><input type="radio">Да</li>
-            <li><input type="radio">Нет</li>
-          </ul>
-        </div>
-        <a href="" class="filter--submit"><input type="submit" value="Показать"></a>
-      </div>\
-      <div class="sort">
-        <p class="sort__name">Сортировка:</p>
-        <ul class="sort__list">
-          <li class="sort__item"><a href="#" class="sort__link">По цене</a></li>
-          <li class="sort__item"><a href="#" class="sort__link">По типу</a></li>
-          <li class="sort__item"><a href="#" class="sort__link">По популярности</a></li>
-        </ul>
-        <ul class="control">
-          <li class="control__item"><a href="#" class="control--up"></a></li>
-          <li class="control__item"><a href="#" class="control--down"></a></li>
+    <main class="main-catalog">
+      <h1 class="main-catalog__title">Монопод для селфи</h1>
+      <div class="breadcrumbs">
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item"><a href="#">Главная</a></li>
+          <li class="breadcrumbs__item"><a href="#">Каталог товаров</a></li>
+          <li class="breadcrumbs__item breadcrumbs__item--active"><a href="#">Моноподы для селфи</a></li>
         </ul>
       </div>
+      
+      <section class="filters">
+        <div class="filter__item">
+          <p class="filter__title">Цвет</p>
+          <label><input type="checkbox" checked='checked'>Чёрный</label>
+          <label><input type="checkbox">Белый</label>
+          <label><input type="checkbox" checked='checked'>Синий</label>
+          <label><input type="checkbox" checked='checked'>Красный</label>
+          <label><input type="checkbox">Розовый</label>
+        </div>
+        <div class="filter__item">
+          <p class="filter__title">Bluetooth</p>
+            <label><input type="radio">Да</label>
+            <label><input type="radio">Нет</label>
+        </div>
+        <a href="" class="filter--submit"><input type="submit" value="Показать"></a>
+      </section>
+
       <div class="goods">
-        <ul class="good__list">
-          <li class="good__item">
-            <div>
-            <img src="https://via.placeholder.com/360x380" alt="" class="good__pic">
-            <p class="good__title">Любительская селфи-палка</p>
-            <p class="good__price">500 руб.</p>
-            <span class="good__label"></span>
-          </div>
-          </li>
-          <li class="good__item">
-            <img src="https://via.placeholder.com/360x380" alt="" class="good__pic">
-            <p class="good__title">Профессиональная селфи-палка</p>
-            <p class="good__price">1 500 руб.</p>
-            <span class="good__label"></span>
-          </li>
-          <li class="good__item">
-            <img src="https://via.placeholder.com/360x380" alt="" class="good__pic">
-            <p class="good__title">Непотопляемая селфи-палка</p>
-            <p class="good__price">2 500 руб.</p>
-            <span class="good__label"></span>
-          </li>
-          <li class="good__item">
-            <img src="https://via.placeholder.com/360x380" alt="" class="good__pic">
-            <p class="good__title">Селфи-палка «Следуй за мной»</p>
-            <p class="good__price">4 900 руб.</p>
-            <span class="good__label--new"></span>
-          </li>
-        </ul>
+        <article class="goods__item good-card">
+          <div class="good-card__pic"><img src="https://via.placeholder.com/360x380" alt="Фото любительской селфи-палки" class="good__pic"></div>
+          <h3 class="good-card__title">Любительская селфи-палка</h3>
+          <p class="good-card__price">500 руб.</p>
+          <span class="good-card__label"></span>
+        </article>
+        <article class="goods__item">
+          <div class="good-card__pic"><img src="https://via.placeholder.com/360x380" alt="Фото профессиональной селфи-палки" class="good__pic"></div>
+          <h3 class="good-card__title">Профессиональная селфи-палка</h3>
+          <p class="good-card__price">1 500 руб.</p>
+          <span class="good-card__label"></span>
+        </article>
+        <article class="goods__item">
+          <div class="good-card__pic"><img src="https://via.placeholder.com/360x380" alt="Фото непотопляемой селфи-палки" class="good__pic"></div>
+          <h3 class="good-card__title">Непотопляемая селфи-палка</h3>
+          <p class="good-card__price">2 500 руб.</p>
+          <span class="good-card__label"></span>
+        </article>
+        <article class="goods__item">
+          <div class="good-card__pic"><img src="https://via.placeholder.com/360x380" alt="Фото селфи-палки Следуй за мной" class="good__pic"></div>
+          <h3 class="good-card__title">Селфи-палка «Следуй за мной»</h3>
+          <p class="good-card__price">4 900 руб.</p>
+          <span class="good-card__label--new"></span>
+        </article>
       </div>
       <div class="catalog_nav">
         <ul class="catalog__controls controls">
