@@ -47,18 +47,18 @@
       <section class="filters">
         <div class="filter__item">
           <h3 class="filter__title">Цвет</h3>
-          <label><input type="checkbox" checked='checked'>Чёрный</label>
-          <label><input type="checkbox">Белый</label>
-          <label><input type="checkbox" checked='checked'>Синий</label>
-          <label><input type="checkbox" checked='checked'>Красный</label>
-          <label><input type="checkbox">Розовый</label>
+          <label><input type="checkbox" checked='checked' name="color-black">Чёрный</label>
+          <label><input type="checkbox" name="color-white">Белый</label>
+          <label><input type="checkbox" name="color-blue" checked='checked'>Синий</label>
+          <label><input type="checkbox" name="color-red" checked='checked'>Красный</label>
+          <label><input type="checkbox" name="color-pink">Розовый</label>
         </div>
         <div class="filter__item">
           <h3 class="filter__title">Bluetooth</h3>
-            <label><input type="radio">Да</label>
-            <label><input type="radio">Нет</label>
+            <label><input type="radio" name="bluetooth-yes">Да</label>
+            <label><input type="radio" name="bluetooth-no">Нет</label>
         </div>
-        <a href="" class="filter--submit"><input type="submit" value="Показать"></a>
+        <a href="" class="filter--submit"><button type="submit" class="btn" name="filter-submit">Показать</button></a>
       </section>
       <div class="goods">
         <article class="goods__item good-card">
