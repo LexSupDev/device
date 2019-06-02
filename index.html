@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
   </head>
   <body>
     <header class="header">
@@ -19,14 +21,14 @@
       <nav class="main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a href="#" class="main-nav__link">Каталог товаров</a>
-            <ul class="catalog__list visually-hidden">
-              <li class="catalog__item"><a href="#" class="catalog__link">Виртуальная реальность</a></li>
-              <li class="catalog__item"><a href="#" class="catalog__link">Фитнес-браслеты</a></li>
-              <li class="catalog__item"><a href="#" class="catalog__link">Квадрокоптеры</a></li>
-              <li class="catalog__item"><a href="catalog.html" class="catalog__link">Моноподы для селфи</a></li>
-              <li class="catalog__item"><a href="#" class="catalog__link">Умные часы</a></li>
-              <li class="catalog__item"><a href="#" class="catalog__link">Экшн-камеры</a></li>
+            <a href="#" class="main-nav__link" id="сatalog-menu">Каталог товаров</a>
+            <ul class="catalog-list visually-hidden" aria-labelledby="сatalog-menu" role="sub-menu">
+              <li class="catalog-list__item"><a href="#" class="catalog__link">Виртуальная реальность</a></li>
+              <li class="catalog-list__item"><a href="#" class="catalog__link">Фитнес-браслеты</a></li>
+              <li class="catalog-list__item"><a href="#" class="catalog__link">Квадрокоптеры</a></li>
+              <li class="catalog-list__item"><a href="catalog.html" class="catalog__link">Моноподы для селфи</a></li>
+              <li class="catalog-list__item"><a href="#" class="catalog__link">Умные часы</a></li>
+              <li class="catalog-list__item"><a href="#" class="catalog__link">Экшн-камеры</a></li>
             </ul>
           </li>
           <li class="main-nav__item"><a href="#" class="main-nav__link">Доставка</a></li>
@@ -53,12 +55,14 @@
         <div class="map">
           <img src="img/map.jpg" alt="Карта">
         </div>
-        <div class="map map--big visually-hidden">
+        <div class="map map-modal visually-hidden">
+          <button class="btn map-modal__close">X</button>
           <img src="img/map--big.jpg" alt="Карта побольше">
         </div>
         <a href="" class="contact__link">Напишите нам</a>
       </div>
       <form action="" class="feedback-modal visually-hidden">
+        <button class="btn feedback-modal__close">X</button>
         <label>Ваше имя:<input type="text" placeholder="Имя Фамилия" name="form-name"></label>
         <label>Ваш e-mail:<input type="email" placeholder="email@example.com" name="form-email"></label>
         <label>Текст письма:<textarea placeholder="В свободной форме" name="form-msg"></textarea></label>
