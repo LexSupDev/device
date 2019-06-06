@@ -62,7 +62,7 @@ h2 {
   color: #000000;
 }
 
-.visually-hiddens {
+.visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
   width: 1px;
@@ -72,6 +72,14 @@ h2 {
 
 .header {
   background-color: #f7e296;
+}
+
+.header__logo img:hover {
+  opacity: 0.6;
+}
+
+.header__logo img:active {
+  opacity: 0.3;
 }
 
 .user-links__list {
