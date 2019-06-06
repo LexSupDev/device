@@ -1,0 +1,230 @@
+@font-face {
+  font-family: 'gilroyextrabold';
+  src: url('../fonts/gilroyextrabold.woff2') format('woff2'),
+       url('../fonts/gilroyextrabold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'gilroylight';
+  src: url('../fonts/gilroylight.woff2') format('woff2'),
+       url('../fonts/gilroylight.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'open_sanslight';
+  src: url('../fonts/opensanslight.woff2') format('woff2'),
+       url('../fonts/opensanslight.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'open_sans';
+  src: url('../fonts/opensans.woff2') format('woff2'),
+       url('../fonts/opensans.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+
+  font-family: "open_sanslight", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #464646;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-family: "gilroyextrabold", Arial, sans-serif;
+  font-size: 47px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  color: #000000;
+}
+
+h2 {
+  font-family: "gilroyextrabold", Arial, sans-serif;
+  font-size: 47px;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: 0.5px;
+  color: #000000;
+}
+
+.visually-hiddens {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+ }
+
+.header {
+  background-color: #f7e296;
+}
+
+.user-links__list {
+  list-style: none;
+}
+
+.user-links__link {
+  color: #000000;
+}
+
+.main-nav__list {
+  list-style: none;
+}
+
+.main-nav__item {
+  font-family: "gilroyextrabold", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+}
+
+.main-nav__link {
+  color: #000000;
+}
+
+.catalog-list {
+  font-family: "open_sanslight", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  letter-spacing: 0.2px;
+  color: #464646;
+
+  list-style: none;
+  text-transform: none;
+}
+
+.catalog__link {
+  color: #000000;
+}
+
+.delivery__list {
+  list-style: none;
+}
+
+.delivery__item {
+  font-family: "gilroyextrabold", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: 3.6px;
+}
+
+.delivery__link {
+  color: #464646;
+}
+
+.btn {
+  font-family: "gilroyextrabold", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.27;
+  letter-spacing: 3.7px;
+  text-align: center;
+  color: #000000;
+  background-color: #f0c52e;
+  text-transform: uppercase;
+}
+
+.footer {
+  background-color: #464646;
+  color: #ffffff;
+}
+
+.footer .user-links__link {
+  color: #ffffff;
+}
+
+.footer__list{
+  list-style: none;
+}
+
+.footer__item {
+  font-family: "gilroyextrabold", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+}
+
+.footer__link {
+  color: #ffffff;
+}
+
+.socials__list {
+  list-style: none;
+}
+
+form label {
+  font-family: "gilroyextrabold", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  color: #000000;
+}
+
+form input {
+  font-family: "open_sanslight", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #464646;
+}
+
+form textarea {
+  font-family: "open_sanslight", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #464646;
+}
+
+.breadcrumbs__list {
+  list-style: none;
+}
+
+.breadcrumbs__item {
+  font-size: 14px;
+}
+
+.breadcrumbs__item a {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.filter__title {
+  font-family: "gilroyextrabold", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  color: #000000;
+}
+
+.filter__item label {
+  font-size: 14px;
+  color: #000000;
+}
+
+.good-card__title {
+  font-family: "gilroyextrabold", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  color: #000000;
+}
+
+.good-card__price {
+  font-family: "gilroylight", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: #000000;
+}
