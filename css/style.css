@@ -74,12 +74,30 @@ h2 {
   background-color: #f7e296;
 }
 
-.header__logo img:hover {
+.logo:hover,
+.user-links__item:hover,
+.user-links__search:hover,
+.main-nav__item:hover,
+.catalog-list__item:hover,
+.footer__item:hover {
   opacity: 0.6;
 }
 
-.header__logo img:active {
+.logo:active,
+.user-links__item:active,
+.main-nav__item:active,
+.catalog-list__item:active,
+.footer__item:active {
   opacity: 0.3;
+}
+
+.user-links__search {
+  opacity: 0.3;
+}
+
+.user-links__search input:active,
+.user-links__search input:focus {
+  opacity: 1;
 }
 
 .user-links__list {
@@ -174,6 +192,33 @@ h2 {
   color: #ffffff;
 }
 
+.footer .user-links__item,
+.socials__item {
+  opacity: 0.7;
+}
+
+.footer .user-links__item:hover,
+.socials__item:hover {
+  opacity: 1;
+}
+
+.footer .user-links__item:active,
+.socials__item:active    {
+  opacity: 0.3;
+}
+
+.socials__item:last-child {
+  opacity: 1; 
+}
+
+.socials__item:last-child:hover {
+  opacity: 0.6; 
+}
+
+.socials__item:last-child:active {
+  opacity: 0.3; 
+}
+
 .socials__list {
   list-style: none;
 }
@@ -208,7 +253,20 @@ form textarea {
 }
 
 .breadcrumbs__item a {
-  color: rgba(0, 0, 0, 0.3);
+  color: #000000;
+  opacity: 0.3;
+}
+
+.breadcrumbs__item a:hover {
+  opacity: 0.6;
+}
+
+.breadcrumbs__item a:active {
+  opacity: 0.1;
+}
+
+.breadcrumbs__item--active {
+  opacity: 1;
 }
 
 .filter__title {
