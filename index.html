@@ -9,13 +9,15 @@
   <body>
     <header class="header">
       <div class="header__top-logo logo">
-        <a class="header__logo"><img src="img/logo-device.svg" width="163px" height="35px" title="DEVICE" alt="DEVICE"></a>
+        Device
       </div>
       <div class="user-links">
         <ul class="user-links__list">
-          <li class="user-links__item user-links__search">
-            <input type="text" class="" aria-label="Найти" placeholder="Поиск по сайту">
-            <button type="button" class="visually-hidden">Найти</button>
+          <li class="user-links__item search">
+            <form action="https://echo.htmlacademy.ru" method="post" class="search__form">
+              <input type="text" class="search__input" aria-label="Найти" placeholder="Поиск по сайту">
+              <button type="button" class="search__submit visually-hidden">Найти</button>
+            </form>
           </li>
           <li class="user-links__item"><a href="#" class="user-links__link">Войти</a></li>
           <li class="user-links__item"><a href="#" class="user-links__link">Сравнить</a></li>
@@ -26,7 +28,7 @@
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a href="#" class="main-nav__link" id="сatalog-menu">Каталог товаров</a>
-            <ul class="catalog-list visually-hidden" aria-labelledby="сatalog-menu" role="sub-menu">
+            <ul class="catalog-list" aria-labelledby="сatalog-menu" role="sub-menu">
               <li class="catalog-list__item"><a href="#" class="catalog__link">Виртуальная реальность</a></li>
               <li class="catalog-list__item"><a href="#" class="catalog__link">Фитнес-браслеты</a></li>
               <li class="catalog-list__item"><a href="#" class="catalog__link">Квадрокоптеры</a></li>
@@ -53,19 +55,19 @@
         </ul>
         <a href="#" class="btn about-us__more">Подробнее о нас</a>
       </section>
-      <div class="contacts">
+      <section class="contacts">
         <h2 class="contacts__title">Контакты</h2>
         <p class="contacts__desc">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
         <div class="map">
           <img src="img/map.jpg" alt="Карта">
         </div>
-        <div class="map map-modal visually-hidden">
+        <div class="map map-modal">
           <button type="button" class="btn-modal map-modal__close">X</button>
           <img src="img/map--big.jpg" alt="Карта побольше">
         </div>
         <a href="" class="btn contact__link">Напишите нам</a>
-      </div>
-      <form action="https://echo.htmlacademy.ru" method="post" class="feedback-modal visually-hidden">
+      </section>
+      <form action="https://echo.htmlacademy.ru" method="post" class="feedback-modal">
         <button type="button" class="btn-modal feedback-modal__close">X</button>
         <label>Ваше имя:<input type="text" placeholder="Имя Фамилия" name="form-name"></label>
         <label>Ваш e-mail:<input type="email" placeholder="email@example.com" name="form-email"></label>
@@ -76,7 +78,7 @@
     <footer class="footer">
       <div class="footer__column">
         <div class="footer__logo logo">
-          <a><img src="img/logo-device.svg" width="163px" height="35px" title="DEVICE" alt="DEVICE"></a>
+          Device
         </div>
         <div class="user-links">
           <ul class="user-links__list">
