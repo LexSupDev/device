@@ -101,6 +101,10 @@ a {
   text-transform: uppercase;
 }
 
+.logo--color-danger {
+  color: #ffc600;
+}
+
 .logo:hover,
 .user-links__item:hover,
 .user-links__search:hover,
