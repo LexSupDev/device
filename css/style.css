@@ -46,6 +46,8 @@ body {
   line-height: 30px;
   font-weight: 300;
   color: #464646;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 img {
@@ -62,6 +64,7 @@ a {
   font-weight: 800;
   letter-spacing: 0.5px;
   color: #000000;
+  flex-basis: 100%;
 }
 
 .about-us__title {
@@ -92,6 +95,9 @@ a {
 
 .header {
   background-color: #f7e296;
+  margin-top: 40px;
+  padding-top: 35px;
+  position: relative;
 }
 
 .logo {
@@ -99,6 +105,12 @@ a {
   font-size: 35px;
   font-weight: 800;
   text-transform: uppercase;
+}
+
+.header__top-logo {
+  position: absolute;
+  top: -15px;
+  left: 60px;
 }
 
 .logo--color-danger {
@@ -132,7 +144,15 @@ a {
 }
 
 .user-links__list {
+  padding: 0;
+  padding-left: 60px;
   list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.user-links__list--bottom {
+  justify-content: flex-end;
 }
 
 .user-links__link {
@@ -140,7 +160,11 @@ a {
 }
 
 .main-nav__list {
+  padding: 0;
+  padding-left: 60px;
   list-style: none;
+  display: flex;
+  justify-content: space-between;
 }
 
 .main-nav__link {
@@ -161,11 +185,15 @@ a {
   color: #464646;
   list-style: none;
   text-transform: none;
-  //display: none;
+  display: none;
 }
 
 .catalog__link {
   color: #000000;
+}
+
+.main-index {
+  display: flex;
 }
 
 .delivery__list {
@@ -208,12 +236,19 @@ a {
   color: #ffffff;
 }
 
+.footer__column {
+  display: flex;
+  justify-content: space-around;
+}
+
 .footer .user-links__link {
   color: #ffffff;
 }
 
 .footer__list{
   list-style: none;
+  display: flex;
+  justify-content: space-around;
 }
 
 .footer__item {
@@ -257,6 +292,7 @@ a {
 
 .socials__list {
   list-style: none;
+  display: flex;
 }
 
 form label {
@@ -280,8 +316,18 @@ form textarea {
   color: #464646;
 }
 
+.main-catalog {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.breadcrumbs {
+  flex-basis: 100%;
+}
+
 .breadcrumbs__list {
   list-style: none;
+  display: flex;
 }
 
 .breadcrumbs__item {
@@ -305,6 +351,16 @@ form textarea {
   opacity: 1;
 }
 
+.filters {
+  flex-basis: 20%;
+  background-color: #eeeeee;
+}
+
+.filter__item {
+  display: flex;
+  flex-direction: column;
+}
+
 .filter__title {
   font-family: "Gilroy Bold", Arial, sans-serif;
   font-size: 18px;
@@ -315,6 +371,23 @@ form textarea {
 .filter__item label {
   font-size: 14px;
   color: #000000;
+}
+
+.goods {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 80%;
+}
+
+.good-card {
+  flex-basis: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.good__pic {
+  flex-basis: 100%;
 }
 
 .good-card__title {
