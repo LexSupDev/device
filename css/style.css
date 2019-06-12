@@ -46,7 +46,7 @@ body {
   line-height: 30px;
   font-weight: 300;
   color: #464646;
-  max-width: 1440px;
+  //max-width: 1440px;
   margin: 0 auto;
 }
 
@@ -97,7 +97,11 @@ a {
   background-color: #f7e296;
   margin-top: 40px;
   padding-top: 35px;
+  margin-left: 140px;
+  margin-right: 140px;
   position: relative;
+  padding-left: 55px;
+  padding-right: 55px;
 }
 
 .logo {
@@ -145,7 +149,7 @@ a {
 
 .user-links__list {
   padding: 0;
-  padding-left: 60px;
+  //padding-left: 60px;
   list-style: none;
   display: flex;
   justify-content: space-between;
@@ -161,7 +165,7 @@ a {
 
 .main-nav__list {
   padding: 0;
-  padding-left: 60px;
+  //padding-left: 60px;
   list-style: none;
   display: flex;
   justify-content: space-between;
