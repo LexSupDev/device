@@ -46,8 +46,10 @@ body {
   line-height: 30px;
   font-weight: 300;
   color: #464646;
-  //max-width: 1440px;
+<<<<<<< Updated upstream
+=======
   margin: 0 auto;
+>>>>>>> Stashed changes
 }
 
 img {
@@ -58,13 +60,17 @@ a {
   text-decoration: none;
 }
 
+.l-center {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .main-catalog__title {
   font-family: "Gilroy Bold", Arial, sans-serif;
   font-size: 47px;
   font-weight: 800;
   letter-spacing: 0.5px;
   color: #000000;
-  flex-basis: 100%;
 }
 
 .about-us__title {
@@ -95,13 +101,16 @@ a {
 
 .header {
   background-color: #f7e296;
+<<<<<<< Updated upstream
+=======
   margin-top: 40px;
   padding-top: 35px;
-  margin-left: 140px;
-  margin-right: 140px;
   position: relative;
-  padding-left: 55px;
-  padding-right: 55px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-left: 60px;
+  padding-right: 60px;
+>>>>>>> Stashed changes
 }
 
 .logo {
@@ -109,12 +118,6 @@ a {
   font-size: 35px;
   font-weight: 800;
   text-transform: uppercase;
-}
-
-.header__top-logo {
-  position: absolute;
-  top: -15px;
-  left: 60px;
 }
 
 .logo--color-danger {
@@ -138,37 +141,50 @@ a {
   opacity: 0.3;
 }
 
-.user-links__search {
-  opacity: 0.3;
-}
-
 .user-links__search input:active,
 .user-links__search input:focus {
   opacity: 1;
 }
 
 .user-links__list {
+<<<<<<< Updated upstream
+  list-style: none;
+=======
   padding: 0;
-  //padding-left: 60px;
   list-style: none;
   display: flex;
-  justify-content: space-between;
+  //justify-content: space-between;
+}
+
+.user-links__item {
+  width: 100px;
+  margin-right: 20px;
+}
+
+.user-links__item:nth-child(2) {
+  margin-right: 200px;
+}
+
+.user-links__item:last-child {
+  margin-right: 0px;
 }
 
 .user-links__list--bottom {
   justify-content: flex-end;
+>>>>>>> Stashed changes
 }
 
 .user-links__link {
   color: #000000;
 }
 
+.search {
+  opacity: 0.3;
+  width: 450px;
+}
+
 .main-nav__list {
-  padding: 0;
-  //padding-left: 60px;
   list-style: none;
-  display: flex;
-  justify-content: space-between;
 }
 
 .main-nav__link {
@@ -189,15 +205,11 @@ a {
   color: #464646;
   list-style: none;
   text-transform: none;
-  display: none;
+  //display: none;
 }
 
 .catalog__link {
   color: #000000;
-}
-
-.main-index {
-  display: flex;
 }
 
 .delivery__list {
@@ -240,19 +252,12 @@ a {
   color: #ffffff;
 }
 
-.footer__column {
-  display: flex;
-  justify-content: space-around;
-}
-
 .footer .user-links__link {
   color: #ffffff;
 }
 
 .footer__list{
   list-style: none;
-  display: flex;
-  justify-content: space-around;
 }
 
 .footer__item {
@@ -296,7 +301,6 @@ a {
 
 .socials__list {
   list-style: none;
-  display: flex;
 }
 
 form label {
@@ -320,18 +324,8 @@ form textarea {
   color: #464646;
 }
 
-.main-catalog {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.breadcrumbs {
-  flex-basis: 100%;
-}
-
 .breadcrumbs__list {
   list-style: none;
-  display: flex;
 }
 
 .breadcrumbs__item {
@@ -355,16 +349,6 @@ form textarea {
   opacity: 1;
 }
 
-.filters {
-  flex-basis: 20%;
-  background-color: #eeeeee;
-}
-
-.filter__item {
-  display: flex;
-  flex-direction: column;
-}
-
 .filter__title {
   font-family: "Gilroy Bold", Arial, sans-serif;
   font-size: 18px;
@@ -375,23 +359,6 @@ form textarea {
 .filter__item label {
   font-size: 14px;
   color: #000000;
-}
-
-.goods {
-  display: flex;
-  flex-wrap: wrap;
-  flex-basis: 80%;
-}
-
-.good-card {
-  flex-basis: 50%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.good__pic {
-  flex-basis: 100%;
 }
 
 .good-card__title {
