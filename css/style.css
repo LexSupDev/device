@@ -141,9 +141,7 @@ a {
 }
 
 .user-links__list {
-<<<<<<< Updated upstream
   list-style: none;
-=======
   padding: 0;
   list-style: none;
   display: flex;
@@ -178,6 +176,7 @@ a {
 
 .main-nav__list {
   list-style: none;
+  display: flex;
 }
 
 .main-nav__link {
