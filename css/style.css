@@ -46,10 +46,7 @@ body {
   line-height: 30px;
   font-weight: 300;
   color: #464646;
-<<<<<<< Updated upstream
-=======
   margin: 0 auto;
->>>>>>> Stashed changes
 }
 
 img {
@@ -101,8 +98,6 @@ a {
 
 .header {
   background-color: #f7e296;
-<<<<<<< Updated upstream
-=======
   margin-top: 40px;
   padding-top: 35px;
   position: relative;
@@ -110,7 +105,6 @@ a {
   margin-right: 20px;
   padding-left: 60px;
   padding-right: 60px;
->>>>>>> Stashed changes
 }
 
 .logo {
@@ -204,7 +198,7 @@ a {
   color: #464646;
   list-style: none;
   text-transform: none;
-  //display: none;
+  display: none;
 }
 
 .catalog__link {
