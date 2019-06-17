@@ -62,15 +62,6 @@ a {
   margin: 0 auto;
 }
 
-.main-catalog__title {
-  font-family: "Gilroy Bold", Arial, sans-serif;
-  font-size: 47px;
-  font-weight: 800;
-  letter-spacing: 0.5px;
-  color: #000000;
-  flex-basis: 100%;
-}
-
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -477,12 +468,22 @@ form textarea {
 }
 
 .main-catalog {
-  display: flex;
-  flex-wrap: wrap;
+  
+}
+
+.main-catalog__title {
+  font-family: "Gilroy Bold", Arial, sans-serif;
+  font-size: 47px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  color: #000000;
+  flex-basis: 100%;
+  margin: 44px 60px 30px;
 }
 
 .breadcrumbs {
-  flex-basis: 100%;
+  margin-left: 60px;
+  margin-bottom: 50px;
 }
 
 .breadcrumbs__list {
@@ -492,6 +493,23 @@ form textarea {
 
 .breadcrumbs__item {
   font-size: 14px;
+  margin-right: 40px;
+  position: relative;
+}
+
+.breadcrumbs__item::after {
+  content: '';
+  display: block;
+  width: 4px;
+  height: 7px;
+  background-image: url(../img/nav-arrow.svg);
+  position: absolute;
+  top: 12px;
+  left: 70px;
+}
+
+.breadscrumbs__item:nth-child(2)::after {
+  left: 125px;
 }
 
 .breadcrumbs__item a {
@@ -512,13 +530,14 @@ form textarea {
 }
 
 .filters {
-  flex-basis: 20%;
   background-color: #eeeeee;
 }
 
 .filter__item {
   display: flex;
   flex-direction: column;
+  margin-left: 60px;
+  width: 268px;
 }
 
 .filter__title {
@@ -536,7 +555,6 @@ form textarea {
 .goods {
   display: flex;
   flex-wrap: wrap;
-  flex-basis: 80%;
 }
 
 .good-card {
