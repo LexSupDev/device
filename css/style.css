@@ -531,6 +531,8 @@ form textarea {
 
 .filters {
   background-color: #eeeeee;
+  margin-left: 60px;
+  width: 268px;
 }
 
 .filter__item {
@@ -555,16 +557,18 @@ form textarea {
 .goods {
   display: flex;
   flex-wrap: wrap;
+  margin-right: 60px;
 }
 
 .good-card {
-  flex-basis: 50%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  width: 359px;
+  margin: 0 20px 45px;
 }
 
-.good__pic {
+.good-card__pic {
   flex-basis: 100%;
 }
 
@@ -580,4 +584,10 @@ form textarea {
   font-size: 16px;
   font-weight: 300;
   color: #000000;
+}
+
+.wrap {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1200px;
 }
