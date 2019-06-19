@@ -117,24 +117,22 @@ a {
   padding-left: 40px;
   width: 500px;
   margin-right: 15px;
-  position: relative;
 }
 
-.search__input {
-  background-color: transparent;
-  border: 0;
-  opacity: 0.3;
-}
-
-.search__form::before {
+.search::before {
   content: ' ';
-  display: block;
   position: absolute;
   top: 7px;
   left: 0;
   width: 16px;
   height: 16px;
   background-image: url(../img/search.svg);
+}
+
+.search__input {
+  background-color: transparent;
+  border: 0;
+  opacity: 0.3;
 }
 
 .search__input:hover {
@@ -146,6 +144,41 @@ a {
   opacity: 1;
   outline: 0;
   border-bottom: 2px solid #000;
+}
+
+.search__submit {
+  background-color: transparent;
+  border: 2px solid #000000;
+}
+
+.login::before {
+  content: ' ';
+  position: absolute;
+  top: 9px;
+  left: 5px;
+  width: 13px;
+  height: 12px;
+  background-image: url(../img/user.svg);
+}
+
+.compare::before {
+  content: ' ';
+  position: absolute;
+  top: 10px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
+  background-image: url(../img/compare.svg);
+}
+
+.bracket::before {
+  content: ' ';
+  position: absolute;
+  top: 10px;
+  left: 5px;
+  width: 12px;
+  height: 12px;
+  background-image: url(../img/cart.svg);
 }
 
 .user-links {
@@ -163,6 +196,7 @@ a {
 .user-links__item {
   padding-right: 40px;
   padding-left: 25px;
+  position: relative;
 }
 
 .user-links__item:last-child {
@@ -237,7 +271,27 @@ a {
   color: #464646;
   list-style: none;
   text-transform: none;
+  display: flex;
   display: none;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  margin-top: 40px;
+  flex-wrap: wrap;
+  width: 600px;
+  flex-grow: 1;
+}
+
+.catalog-list__item {
+  margin-right: 60px;
+}
+
+.catalog-list__item:nth-child(4) {
+  margin-right: 86px;
+}
+
+.catalog-list__item:last-child {
+  flex-basis: 100%;
 }
 
 .catalog__link {
@@ -245,13 +299,93 @@ a {
 }
 
 .main-index {
-  display: flex;
-  margin: 0 20px 90px;
+  //display: flex;
+  margin: 0 0 90px;
   justify-content: space-between;
 }
 
-.about-us {
+.slider{
+  margin: 0 60px;
+}
 
+.slider__item {
+  margin: 0;
+  margin-left: 30px;
+  margin-right: 20px;
+  position: relative;
+  margin-top: -110px;
+  display: none; 
+}
+
+.slider__item--active {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider__control {
+  position: absolute;
+}
+
+.promo-good__img {
+  height: 486px;
+}
+
+.promo-good__title {
+  font-family: "Gilroy Bold", Arial, sans-serif;
+  font-size: 47px;
+  font-weight: 800;
+  line-height: 1;
+  color: #000000;
+  margin: 82px 0 25px;
+  position: relative;
+}
+
+.promo-good__title:before {
+  content: ' ';
+  width: 100px;
+  height: 7px;
+  position: absolute;
+  background: #ffffff;
+  top: -45px;
+}
+
+.promo-good__title:after {
+  font-family: "Gilroy Bold", Arial, sans-serif;
+  font-size: 179px;
+  content: '01';
+  width: 100px;
+  height: 7px;
+  position: absolute;
+  color: #ffffff;
+  top: -95px;
+  right: 55px;
+}
+
+.promo-good__desc {
+  font-family: "Open Sans Light", Arial, sans-serif;
+  font-size: 15px;
+  margin: 0 0 65px;
+}
+
+.promo-good__features {
+  display: flex;
+}
+
+.promo-good__feature-item {
+  margin-right: 75px;
+}
+
+.promo-good__feature-value {
+  margin: 0;
+  margin-bottom: 10px;
+  font-family: "Gilroy Light", Arial, sans-serif;
+  font-size: 36px;
+}
+
+.promo-good__feature-property {
+  margin: 0;
+  font-family: "Open Sans Light", Arial, sans-serif;
+  font-size: 13px;
 }
 
 .about-us__title {
@@ -328,15 +462,41 @@ a {
 }
 
 .btn {
+  display: block;
+  width: 220px;
   font-family: "Gilroy Bold", Arial, sans-serif;
   font-size: 18px;
   line-height: 1.27;
   letter-spacing: 3.7px;
   text-align: center;
   color: #000000;
-  background-color: #f0c52e;
   text-transform: uppercase;
   border: 0;
+  position: relative;
+}
+
+.btn:before {
+  content: ' ';
+  width: 220px;
+  height: 8px;
+  position: absolute;
+  background-color: #f0c52e;
+  left: 0;
+  top: 7px;
+  z-index: -1;
+}
+
+.btn:hover:before {
+  height: 40px;
+  top: -10px;
+}
+
+.btn:active {
+  color: rgba(0,0,0,0.3);
+}
+
+.promo-good__link {
+  margin-bottom: 60px;
 }
 
 .footer {
@@ -590,4 +750,7 @@ form textarea {
   display: flex;
   margin: 0 auto;
   max-width: 1200px;
+}
+.main-nav {
+  padding-bottom: 165px;
 }
