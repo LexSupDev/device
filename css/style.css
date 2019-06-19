@@ -211,6 +211,14 @@ a {
   width: 260px;
 }
 
+.compare::before {
+  content: url(../img/compare.svg);
+  width: 13px;
+  height: 12px;
+  //display: block;
+  //background: url(../img/compare.svg) no-repeat;
+}
+
 .user-links__link {
   color: #000000;
 }
