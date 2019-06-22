@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <div class="l-center">
+    <div class="wrap">
       <header class="header">
         <div class="header__top-logo logo">
           Device
@@ -46,7 +46,7 @@
       </header>
     </div>
     <main class="main-index">
-      <div class="l-center">
+      <div class="wrap">
         <div class="slider">
           <div class="slider__item slider__item--active promo-good">
             <img src="img/slider-1.png" alt="" class="promo-good__img">
@@ -110,7 +110,7 @@
         </div>
       </div>
       <section class="popular-categories">
-        <div class="l-center">
+        <div class="wrap">
           <ul class="popular-categories__list">
             <li class="popular-categories__item">
               <a href="#" class="popular-categories__link">
@@ -151,84 +151,84 @@
           </ul>
         </div>
       </section>
-      <div class="brands">
-        <div class="l-center">
+      <div class="wrap">
+        <div class="brands">
           <ul class="brands__list">
-            <li class="brands__item"><a href="#" class="brands__link brands__link--dji">1</a></li>
-            <li class="brands__item"><a href="#" class="brands__link brands__link--spg">2</a></li>
-            <li class="brands__item"><a href="#" class="brands__link brands__link--gopro">3</a></li>
-            <li class="brands__item"><a href="#" class="brands__link brands__link--vive">4</a></li>
+            <li class="brands__item"><a href="#" class="brands__link brands__link--dji"></a></li>
+            <li class="brands__item"><a href="#" class="brands__link brands__link--spg"></a></li>
+            <li class="brands__item"><a href="#" class="brands__link brands__link--gopro"></a></li>
+            <li class="brands__item"><a href="#" class="brands__link brands__link--vive"></a></li>
           </ul>
         </div>
       </div>
-      <div class="l-center flex-wrap">
-        <section class="about-us">
-          <h2 class="about-us__title">О нас</h2>
-          <p class="about-us__desc">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.<br><br>
-          Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
-          <ul class="delivery__list">
-            <li class="delivery__item"><a href="#" class="delivery__link">Деловые Линии</a></li>
-            <li class="delivery__item"><a href="#" class="delivery__link">Автотрейдинг</a></li>
-            <li class="delivery__item"><a href="#" class="delivery__link">ЖелДорЭкспедиция</a></li>
-          </ul>
-          <a href="#" class="btn about-us__more">Подробнее о нас</a>
-        </section>
-        <section class="contacts">
-          <h2 class="contacts__title">Контакты</h2>
-          <p class="contacts__desc">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-          <div class="map">
-            <img src="img/map.jpg" alt="Карта">
-          </div>
-          <div class="map map-modal">
-            <button type="button" class="btn-modal map-modal__close">X</button>
-            <img src="img/map--big.jpg" alt="Карта побольше">
-          </div>
-          <a href="" class="btn contact__link">Напишите нам</a>
-          <form action="https://echo.htmlacademy.ru" method="post" class="feedback-modal">
-            <button type="button" class="btn-modal feedback-modal__close" aria-label="Закрыть окно">X</button>
-            <label>Ваше имя:<input type="text" placeholder="Имя Фамилия" name="form-name"></label>
-            <label>Ваш e-mail:<input type="email" placeholder="email@example.com" name="form-email"></label>
-            <label>Текст письма:<textarea placeholder="В свободной форме" name="form-msg"></textarea></label>
-            <button type="submit" class="btn">Отправить</button>
-          </form>
-        </section>
+      <div class="wrap">
+        <div class="flex-wrap">
+          <section class="about-us">
+            <h2 class="about-us__title">О нас</h2>
+            <p class="about-us__desc">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.<br><br>
+            Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
+            <ul class="delivery__list">
+              <li class="delivery__item"><a href="#" class="delivery__link">Деловые Линии</a></li>
+              <li class="delivery__item"><a href="#" class="delivery__link">Автотрейдинг</a></li>
+              <li class="delivery__item"><a href="#" class="delivery__link">ЖелДорЭкспедиция</a></li>
+            </ul>
+            <a href="#" class="btn about-us__more">Подробнее о нас</a>
+          </section>
+          <section class="contacts">
+            <h2 class="contacts__title">Контакты</h2>
+            <p class="contacts__desc">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+            <div class="map">
+              <img src="img/map.jpg" alt="Карта">
+            </div>
+            <div class="map map-modal">
+              <button type="button" class="btn-modal map-modal__close">X</button>
+              <img src="img/map--big.jpg" alt="Карта побольше">
+            </div>
+            <a href="" class="btn contact__link">Напишите нам</a>
+            <form action="https://echo.htmlacademy.ru" method="post" class="feedback-modal">
+              <button type="button" class="btn-modal feedback-modal__close" aria-label="Закрыть окно">X</button>
+              <label>Ваше имя:<input type="text" placeholder="Имя Фамилия" name="form-name"></label>
+              <label>Ваш e-mail:<input type="email" placeholder="email@example.com" name="form-email"></label>
+              <label>Текст письма:<textarea placeholder="В свободной форме" name="form-msg"></textarea></label>
+              <button type="submit" class="btn">Отправить</button>
+            </form>
+          </section>
+        </div>
       </div>
     </main>
     <footer class="footer">
-      <div class="l-center">
-        <div class="footer__wrap">
-          <div class="footer__column">
-            <div class="footer__logo logo logo--color-danger">
-              Device
-            </div>
-            <div class="footer__user-links">
-              <ul class="user-links__list user-links__list--bottom">
-                <li class="user-links__item"><a href="#" class="user-links__link">Войти</a></li>
-                <li class="user-links__item"><a href="#" class="user-links__link">Сравнить</a></li>
-                <li class="user-links__item"><a href="#" class="user-links__link">Корзина</a></li>
-              </ul>
-            </div>
+      <div class="wrap">
+        <div class="footer__column">
+          <div class="footer__logo logo logo--color-danger">
+            Device
           </div>
-          <div class="footer__column">
-            <p class="footer__address">г. Москва, ул. Строителей, 15</p>
-            <ul class="footer__list">
-              <li class="footer__item"><a href="#" class="footer__link">Доставка</a></li>
-              <li class="footer__item"><a href="#" class="footer__link">Гарантия</a></li>
-              <li class="footer__item"><a href="#" class="footer__link">Контакты</a></li>
+          <div class="footer__user-links">
+            <ul class="user-links__list user-links__list--bottom">
+              <li class="user-links__item"><a href="#" class="user-links__link">Войти</a></li>
+              <li class="user-links__item"><a href="#" class="user-links__link">Сравнить</a></li>
+              <li class="user-links__item"><a href="#" class="user-links__link">Корзина</a></li>
             </ul>
-            <p class="footer__phone">Тел.: +7 (495) 495-95-95</p>
           </div>
-          <div class="footer__column">
-            <span class="footer__line"></span>
-            <div class="socials">
-              <ul class="socials__list">
-                <li class="socials__item social"><a href="facebook.com" target="_blank"><img src="img/fb.svg" alt="facebook"></a></li>
-                <li class="socials__item social"><a href="instagram.com" target="_blank"><img src="img/instagram.svg" alt="instagram"></a></li>
-                <li class="socials__item social"><a href="twitter.com" target="_blank"><img src="img/twitter.svg" alt="twitter"></a></li>
-              </ul>
-            </div>
-            <a href="htmlacademy.ru" class="htmlacademylogo" target="_blank"><img src="img/logo-html.svg" alt="htmlacademy"></a>
+        </div>
+        <div class="footer__column">
+          <p class="footer__address">г. Москва, ул. Строителей, 15</p>
+          <ul class="footer__list">
+            <li class="footer__item"><a href="#" class="footer__link">Доставка</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Гарантия</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Контакты</a></li>
+          </ul>
+          <p class="footer__phone">Тел.: +7 (495) 495-95-95</p>
+        </div>
+        <div class="footer__column">
+          <span class="footer__line"></span>
+          <div class="socials">
+            <ul class="socials__list">
+              <li class="socials__item social"><a href="facebook.com" target="_blank"><img src="img/fb.svg" alt="facebook"></a></li>
+              <li class="socials__item social"><a href="instagram.com" target="_blank"><img src="img/instagram.svg" alt="instagram"></a></li>
+              <li class="socials__item social"><a href="twitter.com" target="_blank"><img src="img/twitter.svg" alt="twitter"></a></li>
+            </ul>
           </div>
+          <a href="htmlacademy.ru" class="htmlacademylogo" target="_blank"><img src="img/logo-html.svg" alt="htmlacademy"></a>
         </div>
       </div>
     </footer>

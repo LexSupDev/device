@@ -57,7 +57,7 @@ a {
   text-decoration: none;
 }
 
-.l-center {
+.wrap {
   width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
@@ -116,7 +116,7 @@ a {
 
 .search {
   padding-left: 40px;
-  width: 500px;
+  width: 400px;
   margin-right: 15px;
 }
 
@@ -209,15 +209,7 @@ a {
 }
 
 .login {
-  width: 260px;
-}
-
-.compare::before {
-  content: url(../img/compare.svg);
-  width: 13px;
-  height: 12px;
-  //display: block;
-  //background: url(../img/compare.svg) no-repeat;
+  width: 160px;
 }
 
 .user-links__link {
@@ -316,6 +308,7 @@ a {
 
 .slider{
   margin: 0 60px;
+  margin-bottom: 100px;
   position: relative;
   flex-basis: 100%;
 }
@@ -462,9 +455,6 @@ a {
   align-items: center;
 }
 
-.popular-categories__item {
-}
-
 .popular-categories__link {
   text-decoration: none;
   width: 160px;
@@ -488,10 +478,6 @@ a {
   position: absolute;
   left: 0;
   top: 190px;
-}
-
-.flex-wrap {
-  //display: flex;
 }
 
 .brands__list {
@@ -522,6 +508,26 @@ a {
 
 .brands__link--vive {
   background-image: url("../img/vive-logo-grey.png");
+}
+
+.brands__link--dji:hover {
+  background-image: url("../img/dji-logo-color.png");
+}
+
+.brands__link--spg:hover {
+  background-image: url("../img/spg-logo-color.png");
+}
+
+.brands__link--gopro:hover {
+  background-image: url("../img/gopro-logo-color.png");
+}
+
+.brands__link--vive:hover {
+  background-image: url("../img/vive-logo-color.png");
+}
+
+.flex-wrap{
+  display: flex;
 }
 
 .about-us {
@@ -668,10 +674,6 @@ a {
   background-color: #464646;
   color: #ffffff;
   padding-top: 60px;
-}
-
-.footer__wrap {
-  margin: 0 20px;
 }
 
 .footer__column {
@@ -911,11 +913,6 @@ form textarea {
   color: #000000;
 }
 
-.wrap {
-  display: flex;
-  margin: 0 auto;
-  max-width: 1200px;
-}
 .main-nav {
   padding-bottom: 165px;
 }
