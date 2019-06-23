@@ -826,17 +826,16 @@ form textarea {
 
 .breadcrumbs__item::after {
   content: '';
-  display: block;
   width: 4px;
   height: 7px;
   background-image: url(../img/nav-arrow.svg);
   position: absolute;
   top: 12px;
-  left: 70px;
+  right: -20px;
 }
 
-.breadscrumbs__item:nth-child(2)::after {
-  left: 125px;
+.breadscrumbs__item--active:after {
+  display: none;
 }
 
 .breadcrumbs__item a {
@@ -854,6 +853,14 @@ form textarea {
 
 .breadcrumbs__item--active {
   opacity: 1;
+}
+
+.catalog-wrap {
+  display: flex;
+}
+
+.catalog-column {
+   
 }
 
 .filters {
