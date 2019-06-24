@@ -857,6 +857,7 @@ form textarea {
 
 .catalog-wrap {
   display: flex;
+  flex-wrap: nowrap;
 }
 
 .catalog-column {
@@ -888,10 +889,32 @@ form textarea {
   color: #000000;
 }
 
+.sort {
+  display: flex;
+}
+
+.sort__header {
+  margin-right: 55px;
+}
+
+.sort__list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  margin-right: 230px;
+}
+
+.sort__item {
+  margin-right: 30px;
+}
+
+.sort__item:last-child {
+  margin-right: 0px;
+}
+
 .goods {
   display: flex;
   flex-wrap: wrap;
-  margin-right: 60px;
 }
 
 .good-card {
