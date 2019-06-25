@@ -78,6 +78,11 @@ a {
   position: relative;
   padding-left: 60px;
   padding-right: 60px;
+  min-height: 185px;
+}
+
+.header--index {
+  padding-bottom: 165px;
 }
 
 .logo {
@@ -480,6 +485,61 @@ a {
   top: 190px;
 }
 
+.services__tabs-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.services-wrap {
+  background-color: #e5e5e5;
+  width: 100%;
+  height: 288px;
+}
+
+.services {
+  display: flex;
+  position: relative;
+  margin-top: -15px;
+  font-family: "Gilroy Bold", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.services__tabs {
+  margin-right: 115px;
+}
+
+.services__tabs-item {
+  margin-bottom: 45px;
+  text-transform: uppercase;
+}
+
+.services__tabs-item:last-child {
+  margin-bottom: 0;
+}
+
+.services__content-item {
+  display: none;
+}
+
+.services__content-item--active {
+  display: block;
+}
+
+.services__item-title {
+  margin: 0;
+  font-size: 47px;
+  margin-bottom: 43px;
+}
+
+.services__item-desc {
+  margin: 0;
+  font-family: "Open Sans Light", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+}
+
 .brands__list {
   list-style: none;
   display: flex;
@@ -816,6 +876,7 @@ form textarea {
 .breadcrumbs__list {
   list-style: none;
   display: flex;
+  padding: 0;
 }
 
 .breadcrumbs__item {
@@ -864,10 +925,17 @@ form textarea {
    
 }
 
-.filters {
+.filter-wrap {
+  height: 100%;
   background-color: #eeeeee;
-  margin-left: 60px;
-  width: 268px;
+}
+
+.filter {
+
+}
+
+.filter__header {
+  background-color: #dcdcdc;
 }
 
 .filter__item {
@@ -941,8 +1009,4 @@ form textarea {
   font-size: 16px;
   font-weight: 300;
   color: #000000;
-}
-
-.main-nav {
-  padding-bottom: 165px;
 }
