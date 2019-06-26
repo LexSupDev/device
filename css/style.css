@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'Gilroy Bold';
   src: url('../fonts/gilroyextrabold.woff2') format('woff2'),
-       url('../fonts/gilroyextrabold.woff') format('woff');
+    url('../fonts/gilroyextrabold.woff') format('woff');
   font-weight: 700;
   font-style: normal;
 }
@@ -9,7 +9,7 @@
 @font-face {
   font-family: 'Gilroy Light';
   src: url('../fonts/gilroylight.woff2') format('woff2'),
-       url('../fonts/gilroylight.woff') format('woff');
+    url('../fonts/gilroylight.woff') format('woff');
   font-weight: 300;
   font-style: normal;
 }
@@ -17,7 +17,7 @@
 @font-face {
   font-family: 'Open Sans Light';
   src: url('../fonts/opensanslight.woff2') format('woff2'),
-       url('../fonts/opensanslight.woff') format('woff');
+    url('../fonts/opensanslight.woff') format('woff');
   font-weight: 300;
   font-style: normal;
 }
@@ -25,7 +25,7 @@
 @font-face {
   font-family: 'Open Sans';
   src: url('../fonts/opensans.woff2') format('woff2'),
-       url('../fonts/opensans.woff') format('woff');
+    url('../fonts/opensans.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -34,7 +34,9 @@ html {
   box-sizing: border-box;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
@@ -69,7 +71,7 @@ a {
   width: 1px;
   height: 1px;
   margin: -1px;
- }
+}
 
 .header {
   background-color: #f7e296;
@@ -223,7 +225,7 @@ a {
 
 .main-nav__list {
   padding: 0;
-  margin: 0;  
+  margin: 0;
   list-style: none;
   display: flex;
   justify-content: space-between;
@@ -311,7 +313,7 @@ a {
   justify-content: space-between;
 }
 
-.slider{
+.slider {
   margin: 0 60px;
   margin-bottom: 100px;
   position: relative;
@@ -324,7 +326,7 @@ a {
   //margin-right: 20px;
   position: relative;
   margin-top: -110px;
-  display: none; 
+  display: none;
 }
 
 .slider__item--active {
@@ -343,7 +345,7 @@ a {
 .promo-good__img--wide {
   height: 334px;
   margin-top: 60px;
-  
+
 }
 
 .promo-good__title {
@@ -414,7 +416,7 @@ a {
   font-size: 13px;
 }
 
-.slider__control{
+.slider__control {
   padding: 0;
   position: relative;
   top: -170px;
@@ -500,36 +502,133 @@ a {
 .services {
   display: flex;
   position: relative;
+  margin-left: 20px;
   margin-top: -15px;
   font-family: "Gilroy Bold", Arial, sans-serif;
   font-weight: 800;
   font-size: 18px;
+  color: #000000;
 }
 
 .services__tabs {
   margin-right: 115px;
+  position: relative;
+  padding-top: 3px;
+}
+
+.services__tabs:after {
+  content: ' ';
+  display: block;
+  width: 7px;
+  height: 319px;
+  background-color: #000000;
+  position: absolute;
+  top: -85px;
+  right: -136px;
+}
+
+.services__tabs-item input {
+  display: none;
 }
 
 .services__tabs-item {
   margin-bottom: 45px;
   text-transform: uppercase;
+  z-index: 1;
+  position: relative;
+  text-align: center;
+  line-height: 1.27;
+  letter-spacing: 3.7px;
 }
 
-.services__tabs-item:last-child {
-  margin-bottom: 0;
+.services__tabs-item label:after {
+  content: ' ';
+  display: block;
+  position: absolute;
+  width: 158px;
+  height: 8px;
+  background-color: #f0c52e;
+  top: 8px;
+  left: -20px;
+  z-index: -1;
 }
 
 .services__content-item {
   display: none;
+  position: relative;
 }
 
 .services__content-item--active {
   display: block;
 }
 
+.services__tabs-item label {
+  display: inline-block;
+}
+
+.services__tabs-item input + label:hover:after {
+  height: 40px;
+  top: -10px;
+}
+
+.services__tabs-item input:checked + label {
+  color: #f7e184;
+}
+
+.services__tabs-item input:checked + label:after {
+  width: 278px;
+  height: 40px;
+  background-color: #000000;
+  position: absolute;
+  top: -8px;
+}
+
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3 {
+  display: block;
+}
+
+.services__tabs-item:last-child {
+  margin-bottom: 0;
+}
+
+.services__content {
+  margin-left: 140px;
+  margin-top: -12px;
+}
+
+.services__content-item:after {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 555px;
+  top: 0;
+}
+
+.services__content-item--delivery:after {
+  width: 136px;
+  height: 164px;
+  background-image: url("../img/delivery.svg");
+}
+
+.services__content-item--warranty:after {
+  width: 171px;
+  height: 194px;
+  background-image: url("../img/warranty.svg");
+}
+
+.services__content-item--credit:after {
+  width: 156px;
+  height: 186px;
+  background-image: url("../img/credit.svg");
+}
+
 .services__item-title {
   margin: 0;
   font-size: 47px;
+  line-height: 1;
+  letter-spacing: 0.48px;
   margin-bottom: 43px;
 }
 
@@ -538,6 +637,7 @@ a {
   font-family: "Open Sans Light", Arial, sans-serif;
   font-size: 15px;
   font-weight: 300;
+  width: 425px;
 }
 
 .brands__list {
@@ -586,7 +686,7 @@ a {
   background-image: url("../img/vive-logo-color.png");
 }
 
-.flex-wrap{
+.flex-wrap {
   display: flex;
 }
 
@@ -723,7 +823,7 @@ a {
 }
 
 .btn:active {
-  color: rgba(0,0,0,0.3);
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .promo-good__link {
@@ -753,14 +853,14 @@ a {
 .footer__line {
   display: block;
   width: 80px;
-  border-top: 8px solid #ffc600;  
+  border-top: 8px solid #ffc600;
 }
 
 .footer .user-links__link {
   color: #ffffff;
 }
 
-.footer__list{
+.footer__list {
   list-style: none;
   display: flex;
   justify-content: space-around;
@@ -804,17 +904,17 @@ a {
 }
 
 .footer .user-links__item:active,
-.socials__item:active    {
+.socials__item:active {
   opacity: 0.3;
 }
 
 
 .htmlacademylogo:hover {
-  opacity: 0.6; 
+  opacity: 0.6;
 }
 
 .htmlacademylogo:active {
-  opacity: 0.3; 
+  opacity: 0.3;
 }
 
 .socials__list {
@@ -854,9 +954,7 @@ form textarea {
   color: #464646;
 }
 
-.main-catalog {
-  
-}
+.main-catalog {}
 
 .main-catalog__title {
   font-family: "Gilroy Bold", Arial, sans-serif;
@@ -919,11 +1017,11 @@ form textarea {
 .catalog-wrap {
   display: flex;
   flex-wrap: nowrap;
+  font-family: "Gilroy Bold", Arial, sans-serif;
+  font-size: 800;
 }
 
-.catalog-column {
-   
-}
+.catalog-column {}
 
 .filter-wrap {
   height: 100%;
@@ -931,7 +1029,9 @@ form textarea {
 }
 
 .filter {
-
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .filter__header {
@@ -941,7 +1041,6 @@ form textarea {
 .filter__item {
   display: flex;
   flex-direction: column;
-  margin-left: 60px;
   width: 268px;
 }
 
