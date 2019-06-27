@@ -1031,17 +1031,45 @@ form textarea {
 .filter {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
 }
 
 .filter__header {
+  margin: 0;
+  padding: 20px 0 ;
   background-color: #dcdcdc;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+.filter__header:before {
+  content: ' ';
+  width: 50%;
+  height: 70px;
+  z-index: -1;
+  left: 0;
+  margin-top: -20px;
+  display: block;
+  background-color: #dcdcdc;
+  position: absolute;
+  
 }
 
 .filter__item {
   display: flex;
   flex-direction: column;
   width: 268px;
+}
+
+.filter__item:before {
+  content: ' ';
+  width: 30%;
+  height: 200vh;
+  z-index: -1;
+  left: 0;
+  //margin-top: 20px;
+  display: block;
+  background-color: #efefef;
+  position: absolute;
 }
 
 .filter__title {
@@ -1056,17 +1084,31 @@ form textarea {
   color: #000000;
 }
 
+.filter-submit {
+  margin: 0 auto;
+}
+
+.sort-wrap {
+  margin-bottom: 70px;
+}
+
 .sort {
   display: flex;
+  padding: 20px;
+  background-color: #ebebeb; 
 }
 
 .sort__header {
+  margin-right: 55px;
+  margin: 0;
+  text-transform: uppercase;
   margin-right: 55px;
 }
 
 .sort__list {
   list-style: none;
   padding: 0;
+  margin: 0;
   display: flex;
   margin-right: 230px;
 }
@@ -1077,6 +1119,10 @@ form textarea {
 
 .sort__item:last-child {
   margin-right: 0px;
+}
+
+.goods-wrap {
+  margin-left: 50px;
 }
 
 .goods {
