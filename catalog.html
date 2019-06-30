@@ -68,16 +68,23 @@
               <p class="filter__header">Фильтр:</p>
               <div class="filter__item">
                 <h3 class="filter__title">Цвет</h3>
-                <label><input type="checkbox" checked='checked' name="color-black">Чёрный</label>
-                <label><input type="checkbox" name="color-white">Белый</label>
-                <label><input type="checkbox" name="color-blue" checked='checked'>Синий</label>
-                <label><input type="checkbox" name="color-red" checked='checked'>Красный</label>
-                <label><input type="checkbox" name="color-pink">Розовый</label>
+                <input class="filter__input filter__input--checkbox" id="color-black" type="checkbox" name="color" checked>
+                <label for="color-black" class="filter__label filter__label--checkbox">Чёрный</label>
+                <input class="filter__input filter__input--checkbox" id="color-white" type="checkbox" name="color">
+                <label for="color-white" class="filter__label filter__label--checkbox">Белый</label>
+                <input class="filter__input filter__input--checkbox" id="color-blue" type="checkbox" name="color" checked>
+                <label for="color-blue" class="filter__label filter__label--checkbox">Синий</label>
+                <input class="filter__input filter__input--checkbox" id="color-red" type="checkbox" name="color" checked>
+                <label for="color-red" class="filter__label filter__label--checkbox">Красный</label>
+                <input class="filter__input filter__input--checkbox" id="color-pink" type="checkbox" name="color">
+                <label for="color-pink" class="filter__label filter__label--checkbox">Розовый</label>
               </div>
               <div class="filter__item">
                 <h3 class="filter__title">Bluetooth</h3>
-                <label><input type="radio" name="bluetooth-yes">Да</label>
-                <label><input type="radio" name="bluetooth-no">Нет</label>
+                <input class="filter__input filter__input--radio" id="bluetooth-yes" type="radio" name="bluetooth">
+                <label for="bluetooth-yes" class="filter__label filter__label--radio">Да</label>
+                <input class="filter__input filter__input--radio" id="bluetooth-no" type="radio" name="bluetooth">
+                <label for="bluetooth-no" class="filter__label filter__label--radio">Нет</label>
               </div>
               <button type="submit" class="btn filter-submit" name="filter-submit">Показать</button>
             </div>
@@ -122,6 +129,19 @@
                 <span class="good-card__label good-card__label--new"></span>
               </article>
             </div>
+          </div>
+          <div class="pagination">
+            <ul class="pagination__list">
+              <li class="pagination__item">назад</li>
+              <li class="pagination__item">
+                <ul class="pagination__numeric-list">
+                  <li class="pagination__numeric-item">1</li>
+                  <li class="pagination__numeric-item">2</li>
+                  <li class="pagination__numeric-item">3</li>
+                </ul>
+              </li>
+              <li class="pagination__item">вперед</li>
+            </ul>
           </div>
         </div>
       </div>
