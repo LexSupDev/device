@@ -28,15 +28,17 @@
         <nav class="main-nav">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a href="#" class="main-nav__link" id="сatalog-menu">Каталог товаров</a>
-              <ul class="catalog-list" aria-labelledby="сatalog-menu" role="sub-menu">
-                <li class="catalog-list__item"><a href="#" class="catalog__link">Виртуальная реальность</a></li>
-                <li class="catalog-list__item"><a href="#" class="catalog__link">Фитнес-браслеты</a></li>
-                <li class="catalog-list__item"><a href="#" class="catalog__link">Квадрокоптеры</a></li>
-                <li class="catalog-list__item"><a href="catalog.html" class="catalog__link">Моноподы для селфи</a></li>
-                <li class="catalog-list__item"><a href="#" class="catalog__link">Умные часы</a></li>
-                <li class="catalog-list__item"><a href="#" class="catalog__link">Экшн-камеры</a></li>
-              </ul>
+              <a href="catalog.html" class="main-nav__link" id="сatalog-menu">Каталог товаров</a>
+              <div class="catalog-list__wrap">
+                <ul class="catalog-list" aria-labelledby="сatalog-menu" role="sub-menu">
+                  <li class="catalog-list__item"><a href="#" class="catalog__link">Виртуальная реальность</a></li>
+                  <li class="catalog-list__item"><a href="#" class="catalog__link">Фитнес-браслеты</a></li>
+                  <li class="catalog-list__item"><a href="#" class="catalog__link">Квадрокоптеры</a></li>
+                  <li class="catalog-list__item"><a href="catalog.html" class="catalog__link">Моноподы для селфи</a></li>
+                  <li class="catalog-list__item"><a href="#" class="catalog__link">Умные часы</a></li>
+                  <li class="catalog-list__item"><a href="#" class="catalog__link">Экшн-камеры</a></li>
+                </ul>
+              </div>
             </li>
             <li class="main-nav__item"><a href="#" class="main-nav__link">Доставка</a></li>
             <li class="main-nav__item"><a href="#" class="main-nav__link">Гарантия</a></li>
@@ -217,17 +219,19 @@
               <img src="img/map.jpg" alt="Карта">
             </div>
             <div class="map map-modal">
-              <button type="button" class="btn-modal map-modal__close">X</button>
+              <button type="button" class="btn-modal--close map-modal__close">X</button>
               <img src="img/map--big.jpg" alt="Карта побольше">
             </div>
             <a href="" class="btn contact__link">Напишите нам</a>
-            <form action="https://echo.htmlacademy.ru" method="post" class="feedback-modal">
-              <button type="button" class="btn-modal feedback-modal__close" aria-label="Закрыть окно">X</button>
-              <label>Ваше имя:<input type="text" placeholder="Имя Фамилия" name="form-name"></label>
-              <label>Ваш e-mail:<input type="email" placeholder="email@example.com" name="form-email"></label>
-              <label>Текст письма:<textarea placeholder="В свободной форме" name="form-msg"></textarea></label>
-              <button type="submit" class="btn">Отправить</button>
-            </form>
+            <div class="feedback-modal">
+              <form action="https://echo.htmlacademy.ru" method="post" class="feedback-modal__form">
+                <button type="button" class="btn-modal--close feedback-modal__close" aria-label="Закрыть окно"></button>
+                <label class="feedback-modal__item">Ваше имя:<input type="text" placeholder="Имя Фамилия" name="form-name"></label>
+                <label class="feedback-modal__item">Ваш e-mail:<input type="email" placeholder="email@example.com" name="form-email"></label>
+                <label class="feedback-modal__item">Текст письма:<textarea placeholder="В свободной форме" name="form-msg"></textarea></label>
+                <button type="submit" class="btn btn-modal">Отправить</button>
+              </form>
+            </div>
           </section>
         </div>
       </div>
