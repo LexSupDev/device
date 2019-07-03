@@ -67,6 +67,20 @@
             <div class="filter">
               <p class="filter__header">Фильтр:</p>
               <div class="filter__item">
+                <h3 class="filter__title">Стоимость</h3>
+                <div class="range">
+                  <div class="range__controls">
+                    <div class="range__scale">
+                      <div class="range__bar"></div>
+                    </div>
+                    <div class="range__toggle range__toggle--min"></div>
+                    <div class="range__toggle range__toggle--max"></div>
+                    <input type="text" name="value-min" placeholder="от 0" class="range__value range__value--min">
+                    <input type="text" name="value-max" placeholder="до 5000" class="range__value range__value--max">
+                  </div>
+                </div>
+              </div>
+              <div class="filter__item">
                 <h3 class="filter__title">Цвет</h3>
                 <input class="filter__input filter__input--checkbox" id="color-black" type="checkbox" name="color" checked>
                 <label for="color-black" class="filter__label filter__label--checkbox">Чёрный</label>
@@ -95,9 +109,9 @@
             <div class="sort">
               <p class="sort__header">Сортировка:</p>
               <ul class="sort__list">
-                <li class="sort__item">По цене</li>
-                <li class="sort__item">По типу</li>
-                <li class="sort__item">По популярности</li>
+                <li class="sort__item"><a href="#">По цене</a></li>
+                <li class="sort__item"><a href="#">По типу</a></li>
+                <li class="sort__item"><a href="#">По популярности</a></li>
               </ul>
               <ul class="sort__updown">
                 <li class="sort__up"><a href="#" class="sort__up-link"></a></li>
