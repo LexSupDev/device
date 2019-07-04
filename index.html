@@ -222,7 +222,7 @@
               <button type="button" class="btn-modal--close map-modal__close">X</button>
               <img src="img/map--big.jpg" alt="Карта побольше">
             </div>
-            <a href="" class="btn contact__link">Напишите нам</a>
+            <a href="#" class="btn contact__link">Напишите нам</a>
             <div class="feedback-modal">
               <form action="https://echo.htmlacademy.ru" method="post" class="feedback-modal__form">
                 <button type="button" class="btn-modal--close feedback-modal__close" aria-label="Закрыть окно"></button>
@@ -272,5 +272,37 @@
         </div>
       </div>
     </footer>
+    
+    <script>
+      var link = document.querySelector(".contact__link");
+      var popup = document.querySelector(".feedback-modal");
+      var close = popup.querySelector(".feedback-modal__close");
+      var formName = popup.querySelector("[name=form-name]");
+      var mapLink = document.querySelector(".contacts-button-map");
+      var mapPopup = document.querySelector(".modal-map");
+      var mapClose = mapPopup.querySelector(".modal-close");
+      
+      link.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        popup.classList.add("feedback-modal__show");
+      });
+      
+      close.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        popup.classList.remove("feedback-modal__show");
+        formName.focus();
+      });
+      
+      window.addEventListener("keydown", function (evt) {
+        if (evt.keyCode === 27) {
+          evt.preventDefault();
+          if (popup.classList.contains("feedback-modal__show")) {
+            popup.classList.remove("feedback-modal__show");
+          }
+        }
+      });
+      
+    </script>
+    
   </body>
 </html>

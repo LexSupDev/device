@@ -857,6 +857,7 @@ a {
   display: none;
 }
 
+
 .feedback-modal {
   display: none;
   background-color: #ffffff;
@@ -916,6 +917,10 @@ a {
 
 .feedback-modal__item:nth-child(2) {
   margin-right: 10px;
+}
+
+.feedback-modal__show {
+  display: block;
 }
 
 .btn {
