@@ -94,6 +94,10 @@ a {
   text-transform: uppercase;
 }
 
+.logo__link {
+  color: #000000;
+}
+
 .header__top-logo {
   position: absolute;
   top: -15px;
@@ -109,7 +113,13 @@ a {
 .user-links__search:hover,
 .main-nav__link:hover,
 .catalog-list__item:hover,
-.footer__item:hover {
+.footer__item:hover,
+.logo:focus,
+.user-links__item:focus,
+.user-links__search:focus,
+.main-nav__link:focus,
+.catalog-list__item:focus,
+.footer__item:focus{
   opacity: 0.6;
 }
 
@@ -139,7 +149,8 @@ a {
   opacity: 0.3;
 }
 
-.search__input:hover {
+.search__input:hover,
+.search__input:focus {
   opacity: 0.6;
 }
 
@@ -303,6 +314,7 @@ a {
   color: #000000;
 }
 
+
 .main-nav__item:first-child {
   position: relative;
 }
@@ -324,7 +336,9 @@ a {
   background-color: #f7e296;
   z-index: 2;
   height: 165px;
-  width: 1100px;
+  width: 1160px;
+  left: -60px;
+  padding-left: 60px;
   display: none;
 }
 
@@ -342,7 +356,13 @@ a {
   flex-wrap: wrap;
   width: 600px;
   flex-grow: 1;
-  display: none;
+}
+
+.main-nav__item--sub-menu:hover > .catalog-list__wrap,
+.catalog-list__wrap:hover,
+.main-nav__item--sub-menu:focus > .catalog-list__wrap,
+.catalog-list__wrap:focus{
+  display: block;
 }
 
 .catalog-list__item {
@@ -539,6 +559,15 @@ a {
   justify-content: center;
 }
 
+.popular-categories__link:hover,
+.popular-categories__link:focus {
+  background-color: #f0c52e;
+}
+
+.popular-categories__img:active  {
+  opacity: 0.3;  
+}
+
 .popular-categories__link--align-bottom {
   align-items: flex-end;
 }
@@ -632,7 +661,8 @@ a {
   display: inline-block;
 }
 
-.services__tabs-item input + label:hover:after {
+.services__tabs-item input + label:hover:after,
+.services__tabs-item input + label:focus:after{
   height: 40px;
   top: -10px;
 }
@@ -736,19 +766,23 @@ a {
   background-image: url("../img/vive-logo-grey.png");
 }
 
-.brands__link--dji:hover {
+.brands__link--dji:hover,
+.brands__link--dji:focus {
   background-image: url("../img/dji-logo-color.png");
 }
 
-.brands__link--spg:hover {
+.brands__link--spg:hover,
+.brands__link--spg:focus {
   background-image: url("../img/spg-logo-color.png");
 }
 
-.brands__link--gopro:hover {
+.brands__link--gopro:hover,
+.brands__link--gopro:focus {
   background-image: url("../img/gopro-logo-color.png");
 }
 
-.brands__link--vive:hover {
+.brands__link--vive:hover,
+.brands__link--vive:focus {
   background-image: url("../img/vive-logo-color.png");
 }
 
@@ -897,6 +931,16 @@ a {
   right: 20px;
   border: none;
   background: url("../img/modal-close.svg") no-repeat;
+  opacity: 0.5;
+}
+
+.btn-modal--close:hover,
+.btn-modal--close:focus {
+  opacity: 1;
+}
+
+.btn-modal--close:active {
+  opacity: 0.3;
 }
 
 .feedback-modal__item:nth-child(4) {
@@ -909,6 +953,25 @@ a {
   border: none;
   background-color: #f2f2f2; 
 }
+
+.feedback-modal__item input:hover,
+.feedback-modal__item textarea:hover {
+  background-color: #eaeaea;
+}
+
+.feedback-modal__item input:focus,
+.feedback-modal__item textarea:focus {
+  background-color: transparent;
+  outline: 2px solid #f7e296;
+}
+
+.feedback-modal__item input:invalid,
+.feedback-modal__item textarea:invalid {
+  background-color: #edb5b5;
+  opacity: 0.5;
+  outline: 0;
+}
+
 
 .feedback-modal__item input {
   padding: 15px 190px 15px 14px;
@@ -956,11 +1019,12 @@ a {
   position: absolute;
   background-color: #f0c52e;
   left: 0;
-  top: 7px;
+  top: 8px;
   z-index: -1;
 }
 
-.btn:hover:before {
+.btn:hover:before,
+.btn:focus:before {
   height: 40px;
   top: -10px;
 }
@@ -1046,23 +1110,23 @@ a {
   color: #ffffff;
 }
 
-.footer .user-links__item,
 .socials__item {
-  opacity: 0.7;
+  opacity: 0.3;
 }
 
-.footer .user-links__item:hover,
-.socials__item:hover {
-  opacity: 1;
+.socials__item:hover,
+.socials__item:focus {
+  opacity: 0.6;
 }
 
 .footer .user-links__item:active,
 .socials__item:active {
-  opacity: 0.3;
+  opacity: 0.1;
 }
 
 
-.htmlacademylogo:hover {
+.htmlacademylogo:hover,
+.htmlacademylogo:focus{
   opacity: 0.6;
 }
 
@@ -1136,7 +1200,7 @@ form textarea {
   position: relative;
 }
 
-.breadcrumbs__item::after {
+.breadcrumbs__item:after {
   content: '';
   width: 4px;
   height: 7px;
@@ -1144,6 +1208,10 @@ form textarea {
   position: absolute;
   top: 12px;
   right: -20px;
+}
+
+.breadcrumbs__item:last-child:after {
+  display: none;
 }
 
 .breadscrumbs__item--active:after {
@@ -1155,7 +1223,8 @@ form textarea {
   opacity: 0.3;
 }
 
-.breadcrumbs__item a:hover {
+.breadcrumbs__item a:hover,
+.breadcrumbs__item a:focus{
   opacity: 0.6;
 }
 
@@ -1163,7 +1232,7 @@ form textarea {
   opacity: 0.1;
 }
 
-.breadcrumbs__item--active {
+.breadcrumbs__item--active a {
   opacity: 1;
 }
 
@@ -1271,6 +1340,15 @@ form textarea {
   background-image: url(../img/checkbox-off.svg); 
 }
 
+.filter__label:hover:before,
+.filter__label:focus:before {
+ opacity: 0.6;
+}
+
+.filter__label:active:before {
+  opacity: 1;
+}
+
 .filter__input--checkbox:checked + label:before {
   width: 27px;
   background-image: url(../img/checkbox-on.svg);
@@ -1291,9 +1369,12 @@ form textarea {
 }
 
 .filter-submit {
-  margin: 0 auto;
   z-index: 0;
-  background-color: transparent;
+  width: 200px;
+}
+
+.filter-submit:before {
+  width: 200px;
 }
 
 .range {
@@ -1345,7 +1426,8 @@ form textarea {
   margin-top: -10px;
 }
 
-.range__toggle:hover {
+.range__toggle:hover,
+.range__toggle:focus{
   width: 22px;
   height: 22px;
   border: 9px solid #ffffff;
@@ -1424,8 +1506,23 @@ form textarea {
   margin-right: 0px;
 }
 
-.sort__item a {
+
+.sort__item a,
+.sort__updown-link a {
   color: #000000;
+  opacity: 0.3;
+}
+
+.sort__item a:hover,
+.sort__item a:focus,
+.sort__updown-link a:hover,
+.sort__updown-link a:focus {
+  opacity: 0.6;
+}
+
+.sort__item a:active,
+.sort__updown-link a:active {
+  opacity: 1;
 }
 
 .sort__updown {
@@ -1467,6 +1564,7 @@ form textarea {
   align-content: flex-start;
   width: 359px;
   margin: 0 20px 45px;
+  position: relative;
 }
 
 .good-card:nth-child(2n) {
@@ -1475,6 +1573,84 @@ form textarea {
 
 .good-card__pic {
   flex-basis: 100%;
+}
+
+.good-card__more {
+  display: none;
+  margin: 0 auto;
+  flex-direction: column;
+  position: absolute;
+  width: 200px;
+  top: 170px;
+  right: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.good-card__label-new:before {
+  content: 'New';
+  display: none;
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 28px;
+  right: 28px;
+  padding-top: 18px;
+  padding-left: 12px;
+  border: 2px solid #000;
+  border-radius: 50%;
+  color: #000;
+  font-family: "Gilroy Bold",Arial,sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.61;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  opacity: 0.2;
+}
+
+.good-card__label-new--active:before {
+  display: block;
+}
+
+
+.good-card__btn {
+  margin-bottom: 25px;
+}
+
+.good-card__add-compare {
+  text-align: center;
+  color: #000000;
+  opacity: 0.5;
+}
+
+.good-card__add-compare:hover,
+.good-card__add-compare:focus {
+  opacity: 1;
+}
+
+.good-card__add-compare:active {
+  opacity: 0.2;
+}
+
+
+.good-card:hover .good-card__more,
+.good-card:focus .good-card__more {
+  display: flex;
+}
+
+.good-card:hover .good-card__pic,
+.good-card:focus .good-card__pic {
+  background-color: #eeeeee;
+  opacity: 0.7;
+}
+
+.good-card__btn {
+  width: 200px;
+}
+
+.good-card__btn:before {
+  width: 200px;
 }
 
 .good-card__title {
@@ -1496,7 +1672,6 @@ form textarea {
   background-color: #ebebeb;
   margin-left: 70px;
   margin-bottom: 75px;
-  padding: 20px 30px;
 }
 
 .pagination__list {
@@ -1508,7 +1683,19 @@ form textarea {
 }
 
 .pagination__item {
+  line-height: 1.4;
+  letter-spacing: 3.5px;
+  padding: 25px 30px;
   text-transform: uppercase;
+}
+
+.pagination__item--prevnext:hover,
+.pagination__item--prevnext:focus {
+  background-color: #d9d9d9;
+}
+
+.pagination__item--prevnext a:active {
+  opacity: 0.3;
 }
 
 .pagination__item a{
@@ -1530,6 +1717,20 @@ form textarea {
 .pagination__numeric-item a {
   text-decoration: none;
   color: #000000;
+  opacity: 0.3;
+}
+
+.pagination__numeric-item a:hover,
+.pagination__numeric-item a:focus{
+  opacity: 0.6;
+}
+
+.pagination__numeric-item a:active  {
+  opacity: 1;
+}
+
+.pagination__numeric-item--active a {
+  opacity: 1;
 }
 
 .pagination__numeric-item:last-child {
