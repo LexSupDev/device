@@ -216,16 +216,16 @@
             <h2 class="contacts__title">Контакты</h2>
             <p class="contacts__desc">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
             <div class="map">
-              <img src="img/map.jpg" alt="Карта">
+              <img src="/img/map.jpg" alt="">
             </div>
-            <div class="map map-modal">
-              <button type="button" class="btn-modal--close map-modal__close">X</button>
-              <img src="img/map--big.jpg" alt="Карта побольше">
+            <div class="map-modal">
+              <button type="button" class="btn-modal--close"></button>
+              <iframe width="960" height="600" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJVYlcX_ZMtUYRHlBVzQxxlAY&key=AIzaSyAHHDEuYCzV2f7swZyjxDdagib3IxrhnbM" allowfullscreen></iframe>
             </div>
             <a href="#" class="btn contact__link">Напишите нам</a>
             <div class="feedback-modal">
               <form action="https://echo.htmlacademy.ru" method="post" class="feedback-modal__form">
-                <button type="button" class="btn-modal--close feedback-modal__close" aria-label="Закрыть окно"></button>
+                <button type="button" class="btn-modal--close" aria-label="Закрыть окно"></button>
                 <label class="feedback-modal__item">Ваше имя:<input type="text" placeholder="Имя Фамилия" name="form-name"></label>
                 <label class="feedback-modal__item">Ваш e-mail:<input type="email" placeholder="email@example.com" name="form-email"></label>
                 <label class="feedback-modal__item">Текст письма:<textarea placeholder="В свободной форме" name="form-msg"></textarea></label>
@@ -276,21 +276,32 @@
     <script>
       var link = document.querySelector(".contact__link");
       var popup = document.querySelector(".feedback-modal");
-      var close = popup.querySelector(".feedback-modal__close");
+      var close = popup.querySelector(".btn-modal--close");
       var formName = popup.querySelector("[name=form-name]");
-      var mapLink = document.querySelector(".contacts-button-map");
-      var mapPopup = document.querySelector(".modal-map");
-      var mapClose = mapPopup.querySelector(".modal-close");
+      var mapLink = document.querySelector(".map");
+      var mapPopup = document.querySelector(".map-modal");
+      var closeMap = mapPopup.querySelector(".btn-modal--close");
+      
       
       link.addEventListener("click", function (evt) {
         evt.preventDefault();
         popup.classList.add("feedback-modal__show");
+        formName.focus();
+      });
+      
+      mapLink.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        mapPopup.classList.add("map-modal--show");
       });
       
       close.addEventListener("click", function (evt) {
         evt.preventDefault();
         popup.classList.remove("feedback-modal__show");
-        formName.focus();
+      });
+      
+      closeMap.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        mapPopup.classList.remove("map-modal--show");
       });
       
       window.addEventListener("keydown", function (evt) {
@@ -298,6 +309,9 @@
           evt.preventDefault();
           if (popup.classList.contains("feedback-modal__show")) {
             popup.classList.remove("feedback-modal__show");
+          }
+          if (mapPopup.classList.contains("map-modal--show")) {
+            mapPopup.classList.remove("map-modal--show");
           }
         }
       });

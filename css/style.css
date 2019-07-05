@@ -854,9 +854,19 @@ a {
 }
 
 .map-modal {
+  position: absolute;
+  top: 1850px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  width: 960px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
   display: none;
 }
 
+.map-modal--show {
+  display: block;
+}
 
 .feedback-modal {
   display: none;
@@ -879,7 +889,7 @@ a {
   justify-content: space-between;
 }
 
-.feedback-modal__close {
+.btn-modal--close {
   width: 55px;
   height: 55px;
   position: absolute;
