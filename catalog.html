@@ -11,7 +11,7 @@
   <div class="wrap">
     <header class="header">
       <div class="header__top-logo logo">
-        Device
+        <a href="index.html" class="logo__link">Device</a>
       </div>
       <div class="user-links">
         <ul class="user-links__list">
@@ -29,16 +29,18 @@
       </div>
       <nav class="main-nav">
         <ul class="main-nav__list">
-          <li class="main-nav__item">
+          <li class="main-nav__item main-nav__item--sub-menu">
             <a href="#" class="main-nav__link" id="сatalog-menu">Каталог товаров</a>
-            <ul class="catalog-list">
-              <li class="catalog-list__item"><a href="#" class="catalog__link">Виртуальная реальность</a></li>
-              <li class="catalog-list__item"><a href="#" class="catalog__link">Фитнес-браслеты</a></li>
-              <li class="catalog-list__item"><a href="#" class="catalog__link">Квадрокоптеры</a></li>
-              <li class="catalog-list__item"><a href="catalog.html" class="catalog__link">Моноподы для селфи</a></li>
-              <li class="catalog-list__item"><a href="#" class="catalog__link">Умные часы</a></li>
-              <li class="catalog-list__item"><a href="#" class="catalog__link">Экшн-камеры</a></li>
-            </ul>
+            <div class="catalog-list__wrap">
+              <ul class="catalog-list">
+                <li class="catalog-list__item"><a href="#" class="catalog__link">Виртуальная реальность</a></li>
+                <li class="catalog-list__item"><a href="#" class="catalog__link">Фитнес-браслеты</a></li>
+                <li class="catalog-list__item"><a href="#" class="catalog__link">Квадрокоптеры</a></li>
+                <li class="catalog-list__item"><a href="catalog.html" class="catalog__link">Моноподы для селфи</a></li>
+                <li class="catalog-list__item"><a href="#" class="catalog__link">Умные часы</a></li>
+                <li class="catalog-list__item"><a href="#" class="catalog__link">Экшн-камеры</a></li>
+              </ul>
+            </div>
           </li>
           <li class="main-nav__item"><a href="#" class="main-nav__link">Доставка</a></li>
           <li class="main-nav__item"><a href="#" class="main-nav__link">Гарантия</a></li>
@@ -114,8 +116,8 @@
                 <li class="sort__item"><a href="#">По популярности</a></li>
               </ul>
               <ul class="sort__updown">
-                <li class="sort__up"><a href="#" class="sort__up-link"></a></li>
-                <li class="sort__down"><a href="#" class="sort__down-link"></a></li>
+                <li class="sort__updown-link"><a href="#" class="sort__up-link"></a></li>
+                <li class="sort__updown-link"><a href="#" class="sort__down-link"></a></li>
               </ul>
             </div>
           </div>
@@ -125,36 +127,51 @@
                 <div class="good-card__pic"><img src="img/item-1-jpg.jpg" alt="Фото любительской селфи-палки" class="good__pic"></div>
                 <h3 class="good-card__title">Любительская селфи-палка</h3>
                 <p class="good-card__price">500 руб.</p>
+                <div class="good-card__more">
+                  <button class="btn good-card__btn">Подробнее</button>
+                  <a href="#" class="good-card__add-compare">Добавить к сравнению</a>
+                </div>
               </article>
               <article class="goods__item good-card">
                 <div class="good-card__pic"><img src="img/item-2-jpg.jpg" alt="Фото профессиональной селфи-палки"></div>
                 <h3 class="good-card__title">Профессиональная<br> селфи-палка</h3>
                 <p class="good-card__price">1 500 руб.</p>
+                <div class="good-card__more">
+                  <button class="btn good-card__btn">Подробнее</button>
+                  <a href="#" class="good-card__add-compare">Добавить к сравнению</a>
+                </div>
               </article>
               <article class="goods__item good-card">
                 <div class="good-card__pic"><img src="img/item-3-jpg.jpg" alt="Фото непотопляемой селфи-палки"></div>
                 <h3 class="good-card__title">Непотопляемая селфи-палка</h3>
                 <p class="good-card__price">2 500 руб.</p>
+                <div class="good-card__more">
+                  <button class="btn good-card__btn">Подробнее</button>
+                  <a href="#" class="good-card__add-compare">Добавить к сравнению</a>
+                </div>
               </article>
-              <article class="goods__item good-card">
+              <article class="goods__item good-card good-card__label-new good-card__label-new--active">
                 <div class="good-card__pic"><img src="img/item-4-jpg.jpg" alt="Фото селфи-палки Следуй за мной"></div>
                 <h3 class="good-card__title">Селфи-палка «Следуй за<br> мной»</h3>
                 <p class="good-card__price">4 900 руб.</p>
-                <span class="good-card__label good-card__label--new"></span>
+                <div class="good-card__more">
+                  <button class="btn good-card__btn">Подробнее</button>
+                  <a href="#" class="good-card__add-compare">Добавить к сравнению</a>
+                </div>
               </article>
             </div>
           </div>
           <div class="pagination">
             <ul class="pagination__list">
-              <li class="pagination__item"><a href="#">назад</a></li>
+              <li class="pagination__item pagination__item--prevnext"><a href="#">назад</a></li>
               <li class="pagination__item">
                 <ul class="pagination__numeric-list">
-                  <li class="pagination__numeric-item"><a href="#">1</a></li>
+                  <li class="pagination__numeric-item pagination__numeric-item--active"><a href="#">1</a></li>
                   <li class="pagination__numeric-item"><a href="#">2</a></li>
                   <li class="pagination__numeric-item"><a href="#">3</a></li>
                 </ul>
               </li>
-              <li class="pagination__item"><a href="#">вперед</a></li>
+              <li class="pagination__item pagination__item--prevnext"><a href="#">вперед</a></li>
             </ul>
           </div>
         </div>
@@ -170,10 +187,10 @@
           </div>
           <div class="footer__user-links">
             <ul class="user-links__list user-links__list--bottom">
-              <li class="user-links__item"><a href="#" class="user-links__link">Валентин Петухов</a></li>
-              <li class="user-links__item"><a href="#" class="user-links__link">Войти</a></li>
-              <li class="user-links__item"><a href="#" class="user-links__link">Сравнить</a></li>
-              <li class="user-links__item"><a href="#" class="user-links__link">Корзина</a></li>
+              <li class="user-links__item user"><a href="#" class="user-links__link">Валентин Петухов</a></li>
+              <li class="user-links__item login login--out"><a href="#" class="user-links__link">Выйти</a></li>
+              <li class="user-links__item compare"><a href="#" class="user-links__link">Сравнить</a></li>
+              <li class="user-links__item bracket"><a href="#" class="user-links__link">Корзина</a></li>
             </ul>
           </div>
         </div>
