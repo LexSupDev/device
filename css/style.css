@@ -1595,7 +1595,7 @@ form textarea {
   top: 28px;
   right: 28px;
   padding-top: 18px;
-  padding-left: 12ipx;
+  padding-left: 12px;
   border: 2px solid #000;
   border-radius: 50%;
   color: #000;
@@ -1607,11 +1607,6 @@ form textarea {
   text-transform: uppercase;
   opacity: 0.2;
 }
-
-.good-card__label-new--active:before {
-  display: block;
-}
-
 
 .good-card__btn {
   margin-bottom: 25px;
