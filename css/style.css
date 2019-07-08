@@ -912,6 +912,12 @@ a {
   margin-bottom: 66px;
 }
 
+.map-iframe {
+  width: 960px;
+  height: 600px;
+  border: 0;
+}
+
 .map-modal {
   position: absolute;
   top: 1850px;
