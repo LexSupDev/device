@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
     <header class="header">
@@ -17,7 +17,7 @@
               <ul class="user-links__list">
                 <li class="user-links__item search">
                   <form action="https://echo.htmlacademy.ru" method="post" class="search__form">
-                    <input name="search__input" type="search" class="search__input" aria-label="Найти" placeholder="Поиск по сайту">
+                    <input name="search__input" type="text" class="search__input" aria-label="Найти" placeholder="Поиск по сайту">
                     <button type="submit" class="search__submit">Найти</button>
                   </form>
                 </li>
@@ -53,7 +53,7 @@
       <div class="slider">
         <div class="wrap">
           <div class="slider__inner">
-            <div class="slider__item  promo-good">
+            <div class="slider__item  promo-good slider__item--active">
               <img src="img/slider-1.png" width="384" height="486" alt="Фото палки для селфи" class="promo-good__img">
               <div class="promo-good__txt">
                 <p class="promo-good__title">Делай селфи,<br>как Бен Стиллер! </p>
@@ -75,10 +75,10 @@
                 </div>
               </div>
             </div>
-            <div class="slider__item promo-good slider__item--active">
-              <img src="img/slider-2.png" width="345" height="485" alt="Фото фитнесс-браслета" class="promo-good__img">
+            <div class="slider__item promo-good">
+              <img src="img/slider-2.png" width="345" height="485" alt="Фото фитнесс-браслета" class="promo-good__img promo-good__img--bracelet">
               <div class="promo-good__txt">
-                <p class="promo-good__title promo-good__title--n2">Худеем<br>правильно</p>
+                <p class="promo-good__title promo-good__title--bracelet">Худеем<br>правильно</p>
                 <p class="promo-good__desc">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
                 <a href="" class="promo-good__link btn">Подробнее</a>
                 <div class="promo-good__features">
@@ -89,10 +89,10 @@
                 </div>
               </div>
             </div>
-            <div class="slider__item promo-good">
-              <img src="img/slider-3.png" width="526" height="334" alt="Фото дрона уйбийцы" class="promo-good__img promo-good__img--wide">
+            <div class="slider__item slider__item--quadrocopter promo-good">
+              <img src="img/slider-3.png" width="526" height="334" alt="Фото дрона уйбийцы" class="promo-good__img promo-good__img--quadrocopter">
               <div class="promo-good__txt">
-                <p class="promo-good__title promo-good__title--n3">Порхает как бабочка, жалит как пчела!</p>
+                <p class="promo-good__title promo-good__title--quadrocopter">Порхает как бабочка, жалит как пчела!</p>
                 <p class="promo-good__desc">Этот обычный, на первый взгляд, квадрокоптер оснащён мощным лазером, замаскированным под стандартную камеру.</p>
                 <a href="" class="promo-good__link btn">Подробнее</a>
                 <div class="promo-good__features">
@@ -119,39 +119,33 @@
         <div class="wrap">
           <ul class="popular-categories__list">
             <li class="popular-categories__item">
-              <a href="#" class="popular-categories__link">
-                <img src="img/popular-1.svg" width="97" height="55" alt="Иконка виртуальных очков" class="popular-categories__img">
+              <a href="#" class="popular-categories__link popular-categories__link--1">
                 <p class="popular-categories__link-txt">Виртуальная реальность</p>
               </a>
             </li>
             <li class="popular-categories__item">
-              <a href="#" class="popular-categories__link popular-categories__link--align-bottom">
-                <img src="img/popular-2.svg" width="86" height="117" alt="Иконка монопода для селфи" class="popular-categories__img">
-                <span class="popular-categories__link-txt">Моноподы для селфи</span>
+              <a href="#" class="popular-categories__link  popular-categories__link--2">
+                <p class="popular-categories__link-txt popular-categories__link-txt--monopods">Моноподы для селфи</p>
               </a>
             </li>
             <li class="popular-categories__item">
-              <a href="#" class="popular-categories__link">
-                <img src="img/popular-3.svg" width="71" height="87" alt="Иконка экшн-камеры" class="popular-categories__img">
-                <span class="popular-categories__link-txt">Экшн-камеры</span>
+              <a href="#" class="popular-categories__link popular-categories__link--3">
+                <p class="popular-categories__link-txt">Экшн-камеры</p>
               </a>
             </li>
             <li class="popular-categories__item">
-              <a href="#" class="popular-categories__link">
-                <img src="img/popular-4.svg" width="107" height="65" alt="Иконка фитнес-браслета" class="popular-categories__img">
-                <span class="popular-categories__link-txt">Фитнес-браслеты</span>
+              <a href="#" class="popular-categories__link popular-categories__link--4">
+                <p class="popular-categories__link-txt">Фитнес-браслеты</p>
               </a>
             </li>
             <li class="popular-categories__item">
-              <a href="#" class="popular-categories__link">
-                <img src="img/popular-5.svg" width="56" height="98" alt="Иконка умных часов" class="popular-categories__img">
-                <span class="popular-categories__link-txt">Умные часы</span>
+              <a href="#" class="popular-categories__link popular-categories__link--5">
+                <p class="popular-categories__link-txt">Умные часы</p>
               </a>
             </li>
             <li class="popular-categories__item">
-              <a href="#" class="popular-categories__link">
-                <img src="img/popular-6.svg" width="132" height="69" alt="Иконка квадрокоптера" class="popular-categories__img">
-                <span class="popular-categories__link-txt">Квадрокоптеры</span>
+              <a href="#" class="popular-categories__link popular-categories__link--6">
+                <p class="popular-categories__link-txt">Квадрокоптеры</p>
               </a>
             </li>
           </ul>
@@ -206,7 +200,8 @@
       <div class="wrap wrap--flex">
         <section class="about-us">
           <h2 class="about-us__title">О нас</h2>
-          <p class="about-us__desc">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас. Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
+          <p class="about-us__desc">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+          <p class="about-us__desc">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
           <ul class="delivery__list">
             <li class="delivery__item"><a href="#" class="delivery__link">Деловые Линии</a></li>
             <li class="delivery__item"><a href="#" class="delivery__link">Автотрейдинг</a></li>
@@ -245,9 +240,9 @@
           </div>
           <div class="footer__user-links">
             <ul class="user-links__list user-links__list--bottom">
-              <li class="user-links__item"><a href="#" class="user-links__link login">Войти</a></li>
-              <li class="user-links__item"><a href="#" class="user-links__link compare">Сравнить</a></li>
-              <li class="user-links__item"><a href="#" class="user-links__link bracket">Корзина</a></li>
+              <li class="user-links__item login"><a href="#" class="user-links__link ">Войти</a></li>
+              <li class="user-links__item compare"><a href="#" class="user-links__link ">Сравнить</a></li>
+              <li class="user-links__item bracket"><a href="#" class="user-links__link ">Корзина</a></li>
             </ul>
           </div>
         </div>
@@ -268,7 +263,7 @@
               <li class="socials__item social"><a href="twitter.com" target="_blank"><img src="img/twitter.svg" width="32" height="32" alt="Мы на twitter"></a></li>
             </ul>
           </div>
-          <a href="htmlacademy.ru" class="htmlacademylogo" target="_blank"><img src="img/logo-html.svg" width="27" height="35" alt="htmlacademy"></a>
+          <a href="https://htmlacademy.ru/intensive/htmlcss" class="htmlacademylogo" target="_blank"><img src="img/logo-html.svg" width="27" height="35" alt="htmlacademy"></a>
         </div>
       </div>
     </footer> 
