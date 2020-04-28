@@ -1,1 +1,1 @@
-Link [https://salxs.github.io/device/]
+Link https://salxs.github.io/device/
