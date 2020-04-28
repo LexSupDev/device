@@ -252,7 +252,7 @@ a {
 
 .footer__user-links .user-links__item {
   margin-right: 35px;
-} 
+}
 
 .compare:before {
   content: ' ';
@@ -1084,7 +1084,7 @@ a {
 .feedback-modal__item textarea {
   display: block;
   border: none;
-  background-color: #f2f2f2; 
+  background-color: #f2f2f2;
 }
 
 .feedback-modal__item input:hover,
@@ -1413,7 +1413,7 @@ a {
   position: absolute;
   top: 0;
   width: 100vw;
-  height: 100%;  
+  height: 100%;
   right: 268px;
   background-color: #eeeeee;
 }
@@ -1442,7 +1442,7 @@ a {
   height: 70px;
   right: 268px;
   background-color: #dcdcdc;
-  
+
 }
 
 .filter__item {
@@ -1500,7 +1500,7 @@ a {
   height: 23px;
   left: 0;
   top: 2px;
-  background-image: url(../img/checkbox-off.svg); 
+  background-image: url(../img/checkbox-off.svg);
 }
 
 .filter__label:hover:before,
@@ -1524,7 +1524,7 @@ a {
   height: 25px;
   left: 0;
   top: 2px;
-  background-image: url(../img/radio-off.svg); 
+  background-image: url(../img/radio-off.svg);
 }
 
 .filter__input--radio:checked + label:before {
@@ -1628,7 +1628,7 @@ a {
   display: flex;
   padding: 20px 0;
   padding-left: 70px;
-  background-color: #ebebeb; 
+  background-color: #ebebeb;
 }
 
 .sort:after {
@@ -1637,7 +1637,7 @@ a {
   position: absolute;
   width: 100%;
   height: 70px;
-  top: 409px;
+  top: 404px;
   left: 0;
   z-index: -1;
   background-color: #ebebeb;
@@ -1737,7 +1737,7 @@ a {
 
 .good-card:nth-child(2n) {
   margin-right: 0;
-} 
+}
 
 .good-card__pic {
   flex-basis: 100%;
@@ -1917,17 +1917,17 @@ a {
     -webkit-transform: translateY(-2000px);
             transform: translateY(-2000px);
     }
-  
+
     70% {
     -webkit-transform: translateY(30px);
             transform: translateY(30px);
     }
-  
+
     90% {
     -webkit-transform: translateY(-10px);
             transform: translateY(-10px);
     }
-  
+
     100% {
     -webkit-transform: translateY(0);
             transform: translateY(0);
