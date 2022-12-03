@@ -1,1 +1,1 @@
-Link https://salxs.github.io/device/
+Link https://lexsupdev.github.io/device/
